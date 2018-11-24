@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/naboo_bg">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbarlayout"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/naboo_bg"
+            android:theme="@style/ToolbarTheme">
+
+        <TextView
+            android:id="@+id/toolbar_textview"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="全部订单"
+            android:textSize="@dimen/address_labels_layout_textSize"
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/address_toolbar_textView_layout_marginEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"/>
+        </android.support.v7.widget.Toolbar>>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/nobody_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="50px"
+        android:textColor="#bcbdbd"
+        android:gravity="center"
+        android:text="未查到订单信息"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/appbarlayout"
+        android:id="@+id/order_recyclerView"
+        android:layout_marginTop="50px"
+        android:layout_marginStart="55px"
+        android:layout_marginEnd="55px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+</RelativeLayout>

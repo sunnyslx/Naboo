@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/naboo_bg"
+    tools:context="com.idx.naboo.user.personal_center.order.OrderActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbarlayout"
+
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:background="@drawable/naboo_bg"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ToolbarTheme"/>
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:id="@+id/line_order_information"
+        android:layout_below="@+id/appbarlayout"
+        android:layout_marginTop="@dimen/line_order_information_layout_marginTop"
+        android:layout_marginStart="@dimen/line_order_information_layout_marginStart"
+        android:layout_marginEnd="@dimen/line_order_information_layout_marginEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/all_orders"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/order_info_textView_layout_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="全部订单"
+            android:textColor="#b3ffffff"
+            android:textSize="@dimen/order_info_textView_textSize"/>
+        <TextView
+            android:layout_marginLeft="@dimen/order_info_textView_layout_marginLeft"
+            android:id="@+id/not_orders"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/order_info_textView_layout_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="待支付"
+            android:textColor="#b3ffffff"
+            android:textSize="@dimen/order_info_textView_textSize"/>
+        <TextView
+            android:layout_marginLeft="@dimen/order_info_textView_layout_marginLeft"
+            android:id="@+id/complete_orders"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/order_info_textView_layout_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="已支付"
+            android:textColor="#b3ffffff"
+            android:textSize="@dimen/order_info_textView_textSize"/>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/line_order_information"
+        android:layout_marginTop="@dimen/line_order_information_layout_marginTop"
+        android:layout_marginStart="@dimen/line_order_information_layout_marginStart"
+        android:layout_marginEnd="@dimen/line_order_information_layout_marginEnd">
+    </android.support.v4.view.ViewPager>
+
+
+
+    <LinearLayout
+        android:id="@+id/nobodyOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/j1_bg"/>
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="36sp"
+            android:textColor="#ffffff"
+            android:text="你还没有订单哦"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

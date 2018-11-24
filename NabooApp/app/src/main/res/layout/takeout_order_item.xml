@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/takeout_1_margin_left"
+    android:layout_marginRight="@dimen/takeout_1_margin_left"
+    android:orientation="vertical">
+    <!--@dimen/takeout_4_order_item_height-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/takeout_4_order_extra_margin_bottom_top">
+
+        <TextView
+            android:id="@+id/takeout_order_item_index"
+            android:layout_width="@dimen/takeout_4_order_item_index_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/takeout_4_order_item_index_margin_left"
+            android:text="1."
+            android:textColor="#fff"
+            android:textSize="@dimen/takeout_1_base_text_size" />
+
+        <TextView
+            android:id="@+id/takeout_order_item_food_name"
+            android:layout_width="@dimen/takeout_4_order_item_food_name_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="菜名菜名菜名菜名"
+            android:textColor="#fff"
+            android:textSize="@dimen/takeout_1_base_text_size" />
+
+        <TextView
+            android:id="@+id/takeout_order_item_count"
+            android:layout_width="@dimen/takeout_4_order_item_count_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/takeout_4_order_item_count_margin_right"
+            android:text="X"
+            android:textColor="#fff"
+            android:textSize="@dimen/takeout_1_base_text_size" />
+
+        <TextView
+            android:id="@+id/takeout_order_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/takeout_4_order_item_price_margin_right"
+            android:text="￥20"
+            android:textColor="#fff"
+            android:textSize="@dimen/takeout_1_base_text_size" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_l2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/takeout_order_item_price"
+        android:layout_marginTop="@dimen/takeout_4_order_item_line_margin_top"
+        android:background="@color/takeout_car_horizontal_line" />
+</LinearLayout>

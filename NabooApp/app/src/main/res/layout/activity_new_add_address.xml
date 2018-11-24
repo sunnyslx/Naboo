@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/naboo_bg"
+    tools:context="com.idx.naboo.user.personal_center.address.NewAddAddressActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbarlayout"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/naboo_bg"
+            android:theme="@style/ToolbarTheme"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/line_name"
+        android:layout_below="@id/appbarlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:textSize="28sp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="收货人"
+            android:textColor="#ffffff"
+            android:gravity="center" />
+        <EditText
+            android:id="@+id/address_name"
+            android:layout_width="600dp"
+            android:textColorHint="#1affffff"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:maxLength="9"
+            android:paddingBottom="10dp"
+            android:imeOptions="actionNext"
+            android:theme="@style/MyEditText"
+            android:singleLine="true"
+            android:textSize="28sp"
+            android:hint="请输入姓名"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_phone"
+        android:layout_below="@id/line_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:textSize="28sp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="手机号"
+            android:textColor="#ffffff"
+            android:gravity="center" />
+        <EditText
+            android:id="@+id/address_phone"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:inputType="phone"
+            android:digits="1234567890"
+            android:maxLength="11"
+            android:textColorHint="#1affffff"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:theme="@style/MyEditText"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:textSize="28sp"
+            android:hint="请输入手机号码"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_address"
+        android:layout_below="@id/line_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:textSize="28sp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="收货地址"
+            android:textColor="#ffffff"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/address_select"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:theme="@style/MyEditText"
+            android:imeOptions="actionNext"
+            android:textColorHint="#1affffff"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="28sp"
+            android:text="点击选择地区"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_house_number"
+        android:layout_below="@id/line_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:textSize="28sp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="门牌号"
+            android:textColor="#ffffff"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/address_detailed"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:maxLength="9"
+            android:theme="@style/MyEditText"
+            android:textColorHint="#1affffff"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:textSize="28sp"
+            android:hint="请输入，例：507" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_address_labels"
+        android:layout_below="@id/line_house_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="地址标签"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/house"
+                android:layout_width="150dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent"
+                android:text="家"
+                android:textColor="#ffffff"
+                android:textSize="28sp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/company"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="公司"
+                android:textColor="#ffffff"
+                android:textSize="28sp"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/address_labels"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:textColorHint="#1affffff"
+                android:textColor="#ffffff"
+                android:paddingBottom="10dp"
+                android:maxLength="4"
+                android:theme="@style/MyEditText"
+                android:textSize="28sp"
+                android:clickable="true"
+                android:focusableInTouchMode="false"
+                android:hint="自定义标签(4个字以内)"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/address_save"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/line_address_labels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:text="确认"
+            android:background="@drawable/button_ok_shape"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>

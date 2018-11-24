@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/takeout_3_car_item_height"
+    android:layout_centerInParent="true"
+    android:layout_marginLeft="@dimen/takeout_1_margin_left"
+    android:layout_marginRight="@dimen/takeout_1_margin_left">
+
+    <TextView
+        android:id="@+id/takeout_car_item_index"
+        android:layout_width="@dimen/takeout_3_car_item_index_width_height"
+        android:layout_height="@dimen/takeout_3_car_item_index_width_height"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/takeout_3_car_item_index_margin_left"
+        android:layout_marginTop="@dimen/takeout_3_car_item_index_margin_top"
+        android:background="@drawable/takeout_car_item_sort"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/takeout_item_sort_text"
+        android:textSize="@dimen/takeout_2_number_text_size" />
+
+    <LinearLayout
+        android:id="@+id/ll_car_item"
+        android:layout_width="@dimen/takeout_3_car_item_image_width_height"
+        android:layout_height="@dimen/takeout_3_car_item_image_width_height"
+        android:layout_marginLeft="@dimen/takeout_3_car_item_index_margin_right"
+        android:layout_toRightOf="@id/takeout_car_item_index"
+        android:background="@drawable/takeout_item_image"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/takeout_3_car_item_margin_top_bottom">
+
+        <ImageView
+            android:id="@+id/takeout_car_item_food"
+            android:layout_width="@dimen/takeout_3_car_item_image_width_height"
+            android:layout_height="@dimen/takeout_3_car_item_image_width_height"
+            android:src="@mipmap/takeout_order_item_food"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/takeout_car_item_food_name"
+        android:layout_width="@dimen/takeout_3_car_item_food_name_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/takeout_3_car_item_index_margin_right"
+        android:layout_marginTop="@dimen/takeout_3_car_item_food_name_margin_top"
+        android:layout_toRightOf="@id/ll_car_item"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text=""
+        android:textColor="@color/takeout_item_sort_text"
+        android:textSize="@dimen/takeout_1_base_text_size" />
+
+    <ImageButton
+        android:id="@+id/takeout_car_item_reduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/takeout_3_car_reduce_margin_left"
+        android:layout_marginTop="@dimen/takeout_3_car_item_reduce_margin_top"
+        android:layout_toRightOf="@id/takeout_car_item_food_name"
+        android:background="@null"
+        android:src="@mipmap/icon_reduce" />
+
+    <TextView
+        android:id="@+id/takeout_car_item_count"
+        android:layout_width="@dimen/takeout_3_car_item_count_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/takeout_3_car_item_count_margin_top"
+        android:layout_toRightOf="@id/takeout_car_item_reduce"
+        android:gravity="center"
+        android:text="12"
+        android:maxLength="2"
+        android:textColor="@color/takeout_item_sort_text"
+        android:textSize="@dimen/takeout_2_number_text_size" />
+
+    <ImageButton
+        android:id="@+id/takeout_car_item_increment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/takeout_3_car_item_reduce_margin_top"
+        android:layout_toRightOf="@id/takeout_car_item_count"
+        android:background="@null"
+        android:src="@mipmap/icon_add" />
+
+    <TextView
+        android:id="@+id/takeout_car_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/takeout_car_item_increment"
+        android:layout_marginLeft="@dimen/takeout_3_car_item_price_margin_right"
+        android:layout_marginTop="@dimen/takeout_3_car_item_count_margin_top"
+        android:text="￥20"
+        android:textColor="#fff"
+        android:textSize="@dimen/takeout_1_base_text_size" />
+
+    <TextView
+        android:id="@+id/takeout_car_item_old_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/takeout_car_item_price"
+        android:layout_alignLeft="@id/takeout_car_item_price"
+        android:text=""
+        android:textColor="#999"
+        android:textSize="@dimen/takeout_3_car_item_old_price_size" />
+</RelativeLayout>

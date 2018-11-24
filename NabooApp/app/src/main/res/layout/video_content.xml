@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/video_image_marginStart"
+    android:layout_marginTop="@dimen/video_image_marginTop"
+    android:layout_marginEnd="@dimen/video_image_marginEnd">
+
+    <RelativeLayout
+        android:id="@+id/takeout_item_rl_1"
+        android:layout_width="@dimen/video_image_width"
+        android:layout_height="@dimen/video_image_height"
+        android:background="@drawable/takeout_item_image"
+        android:layout_marginStart="@dimen/video_image_marginStart"
+        android:layout_marginTop="@dimen/video_image_marginTop"
+        android:layout_marginEnd="@dimen/video_image_marginEnd">
+
+        <ImageView
+            android:id="@+id/movie_image"
+            android:layout_width="@dimen/video_image_width"
+            android:layout_height="@dimen/video_image_height"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/movie_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@mipmap/g1_number_card"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/takeout_item_sort_text"
+            android:textSize="@dimen/video_index_textSize" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/movie_name"
+        android:layout_width="@dimen/takeout_1_item_image_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/takeout_item_rl_1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="电影名称"
+        android:textSize="@dimen/video_title_textSize"
+        android:layout_marginTop="@dimen/video_title_marginImage"
+        android:layout_marginStart="@dimen/video_image_marginStart"
+        android:layout_marginEnd="@dimen/video_image_marginEnd"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/movie_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movie_name"
+        android:text="电影评分"
+        android:textSize="@dimen/video_grade_textSize"
+        android:layout_marginTop="@dimen/video_grade_marginTitle"
+        android:textColor="@color/video_gradeColor"
+        android:layout_marginStart="@dimen/video_image_marginStart"
+        android:layout_marginEnd="@dimen/video_image_marginEnd"/>
+</RelativeLayout>

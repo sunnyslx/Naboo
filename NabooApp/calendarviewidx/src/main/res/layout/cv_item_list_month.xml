@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:paddingLeft="@dimen/calendar_tv_month_padding"
+        android:paddingRight="@dimen/calendar_tv_month_padding"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/calendar_tv_month_textsize"
+        android:textStyle="bold" />
+
+    <com.idx.calendarview.MonthView
+        android:id="@+id/selectView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/calendar_selectView_padding"
+        android:paddingRight="@dimen/calendar_selectView_padding"
+        app:month_view_remark_color="#3F51B5"
+        app:month_view_text_color="#FFFFFF"
+        app:month_view_text_size="@dimen/calendar_MonthView_textSize" />
+</LinearLayout>

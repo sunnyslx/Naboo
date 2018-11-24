@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_week"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/calendar_week_height"
+    android:minHeight="@dimen/calendar_llweek_minHeight"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/calendar_week_padding"
+    android:paddingTop="@dimen/calendar_week_padding"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="日"
+        android:textSize="@dimen/calendar_week_textsize" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="一"
+        android:textSize="@dimen/calendar_week_textsize" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="二"
+        android:textSize="@dimen/calendar_week_textsize" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="三"
+        android:textSize="@dimen/calendar_week_textsize" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="四"
+        android:textSize="@dimen/calendar_week_textsize" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="五"
+        android:textSize="@dimen/calendar_week_textsize" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="六"
+        android:textSize="@dimen/calendar_week_textsize" />
+</LinearLayout>

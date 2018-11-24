@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/music_list_title_marginTop">
+    <TextView
+        android:id="@+id/music_list_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="@dimen/music_list_titleSize" />
+    <ImageView
+        android:id="@+id/music_list_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/music_sound_icon"/>
+    <LinearLayout
+        android:layout_toEndOf="@id/music_list_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/music_list_index_marginEnd"
+        android:paddingBottom="@dimen/music_title_marginBottom"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:id="@+id/music_list_title"
+            android:layout_width="@dimen/music_list_title_width"
+            android:layout_height="wrap_content"
+            android:text="歌曲"
+            android:textSize="@dimen/music_list_titleSize" />
+        <TextView
+            android:id="@+id/music_list_singer"
+            android:layout_width="@dimen/music_list_title_width"
+            android:layout_height="wrap_content"
+            android:text="歌名"
+            android:textSize="@dimen/music_list_singerSize"
+            android:layout_marginTop="@dimen/music_list_artist_marginTitle"/>
+    </LinearLayout>
+</LinearLayout>

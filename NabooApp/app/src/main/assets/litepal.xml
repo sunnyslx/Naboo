@@ -1,0 +1,7 @@
+<litepal>
+    <dbname value="schedule"/>
+    <version value="1"/>
+    <list>
+        <mapping class="com.idx.naboo.user.personal_center.address.AllAddress"/>
+    </list>
+</litepal>

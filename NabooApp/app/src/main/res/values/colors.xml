@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#0A0909</color>
+    <color name="speak_dialog_bg_ready">#CC3F51B5</color>
+    <color name="speak_dialog_bg_speaking">#CCFF4081</color>
+    <color name="colorDark">#737373</color>
+    <color name="Splash_background">#29B6E4</color>
+    <color name="editcolor">#B4D4E9</color>
+    <color name="colorSelfBlack">#0E73BA</color>
+
+    //地图
+    <color name="colorBlue">#007eff</color>
+    <color name="colorBlack">#535353</color>
+    <color name="beautiful">#aa7b7575</color>
+    <color name="phone_bg">#f6f6f6</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey"> #ebebeb</color>
+    <color name="text_hint">#6C6C6C</color>
+    <color name="star_color">#FECB00</color>
+    <color name="detail_title_color">#212121</color>
+    <color name="detail_type_color">#b3212121</color>
+    <color name="result_addr_color">#80212121</color>
+    <color name="result_dis_color">#4d212121</color>
+    <color name="result_order_color">#757575</color>
+    <color name="drive_btn_color">#007EFF</color>
+
+    //外卖
+    <color name="takeout_item_border">#111</color>
+    <color name="takeout_item_sort">#0a0909</color>
+    <color name="takeout_item_sort_text">#fff</color>
+    <color name="takeout_item_car_quantity_text">#111</color>
+    <color name="takeout_item_order_address_text">#000</color>
+    <color name="takeout_seller_item_sort">#fff</color>
+    <color name="takeout_seller_vertical_line">#4deae7e2</color>
+    <color name="takeout_car_horizontal_line">#898888</color>
+    <color name="takeout_pay_bg">#e4dede</color>
+    <color name="takeout_car_title_text_color">#2b2b2b</color>
+    <color name="takeout_car_bottom_color">#181818</color>
+    <color name="takeout_car_bottom_text_color">#fff</color>
+    <color name="takeout_car_bottom_balance_color">#149fef</color>
+    <color name="takeout_order_bg">#fff</color>
+
+    //打电话
+    <color name="video_call_theme_background_light">#fffff8f8</color>
+    <color name="friend_agree_and_reject">#212121</color>
+    <color name="video_call_bg">#212121</color>
+    <color name="video_call_answer">#20ce09</color>
+    <color name="video_call_red">#e20615</color>
+    <color name="video_call_white">#89ffffff</color>
+    <color name="video_call_transparent">#00000000</color>
+    <color name="video_call_black">#1e212121</color>
+    <color name="video_call_green">#dd039e00</color>
+    <color name="video_call_agree_reject">#dd098fd7</color>
+    <color name="video_call_pager">#dd098fd7</color>
+
+    <color name="btn_register_normal">#ffffff</color>
+    <color name="btn_register_pressed">#00acff</color>
+    <color name="btn_login_normal">#00acff</color>
+    <color name="btn_login_pressed">#46678d</color>
+    <color name="tran">#3383f1ed</color>
+    <color name="top_bar_normal_bg">#00acff</color>
+
+    <color name="view_background">#737373</color>
+    <color name="red">#8B0000</color>
+    //天气
+    <color name="weather_gray">#b3ffffff</color>
+    <color name="weather_left_linegray">#80ffffff</color>
+    <color name="weather_line">#66ffffff</color>
+    //视频
+    <color name="video_gradeColor">#007eff</color>
+
+    //新闻
+    <color name="news_background">#2e2e2e</color>
+    <color name="news_label_background">#33ffffff</color>
+    <color name="news_label_text_color">#b3ffffff</color>
+    <color name="news_title_text_color">#ffffff</color>
+    <color name="news_info_text_color">#4dffffff</color>
+    <color name="news_line_color">#1affffff</color>
+    <color name="news_content_color">#ffffff</color>
+    <color name="news_navigation_text_color">#007eff</color>
+    <color name="news_navigation_background_color">#212121</color>
+    <color name="news_title_bar_text_color">#ffffff</color>
+    <color name="news_scroll_bar_color">#757575</color>
+
+    //人物
+    <color name="figure_background_color">#2e2e2e</color>
+    <color name="figure_name_text_color">#ffffff</color>
+    <color name="figure_experience_text_color">#ffffff</color>
+    <color name="figure_info_text_color">#4dffffff</color>
+    <color name="figure_name_background_color">#212121</color>
+
+
+</resources>

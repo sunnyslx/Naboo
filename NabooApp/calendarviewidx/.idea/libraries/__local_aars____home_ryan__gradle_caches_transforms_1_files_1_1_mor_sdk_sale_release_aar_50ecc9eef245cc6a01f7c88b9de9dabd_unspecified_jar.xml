@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="__local_aars__:/home/ryan/.gradle/caches/transforms-1/files-1.1/mor-sdk-sale-release.aar/50ecc9eef245cc6a01f7c88b9de9dabd:unspecified@jar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/mor-sdk-sale-release.aar/50ecc9eef245cc6a01f7c88b9de9dabd/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/mor-sdk-sale-release.aar/50ecc9eef245cc6a01f7c88b9de9dabd/jars/libs/glide-okhttp3-integration-4.0.0.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/mor-sdk-sale-release.aar/50ecc9eef245cc6a01f7c88b9de9dabd/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

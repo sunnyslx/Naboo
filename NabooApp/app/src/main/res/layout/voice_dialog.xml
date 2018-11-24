@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/ready_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/speak_effect_begin">
+    </pl.droidsonroids.gif.GifImageView>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/speaking_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/speak_effect">
+    </pl.droidsonroids.gif.GifImageView>
+    </FrameLayout>
+    <TextView
+        android:id="@+id/recognize_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:background="@color/speak_dialog_bg_ready"
+        android:text="Hello"/>
+</LinearLayout>

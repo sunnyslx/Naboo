@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/line1"
+    android:layout_marginTop="@dimen/address_RecyclerView_item_layout_marginTop"
+    android:layout_marginStart="@dimen/address_toolbar_textView_layout_marginEnd"
+    android:layout_marginEnd="@dimen/address_toolbar_textView_layout_marginEnd"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/text_id"
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/shape_text_view"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/address_text_id_textsize" />
+
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/address_relativeLayout_margin_left"
+        android:layout_width="@dimen/address_relativeLayout_layout_width"
+        android:layout_height="@dimen/address_relativeLayout_layout_height"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="@drawable/shape_edit_text">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/address_relativeLayout_layout_width"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_marginTop="@dimen/address_labels_margin_Top"
+                android:id="@+id/labels"
+                android:gravity="center"
+                android:background="@color/red"
+                android:layout_marginLeft="@dimen/news_label_margin_left"
+                android:layout_width="@dimen/address_labels_layout_width"
+                android:layout_height="@dimen/address_labels_layout_height"
+                android:textSize="@dimen/address_text_id_textsize"/>
+
+
+            <TextView
+                android:layout_marginLeft="@dimen/address_list_address_name_margin_left"
+                android:layout_marginTop="@dimen/address_list_address_name_margin_Top"
+                android:id="@+id/list_address_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="張志遠"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="@dimen/address_line_select_textSize"/>
+
+            <TextView
+                android:layout_marginTop="@dimen/address_list_address_name_margin_Top"
+                android:layout_marginLeft="@dimen/address_list_address_phone_margin_left"
+                android:id="@+id/list_address_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15919924025"
+                android:textSize="@dimen/address_line_select_textSize"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_select"
+            android:layout_marginTop="@dimen/address_line_select_margin_Top"
+            android:layout_marginLeft="@dimen/address_list_address_name_margin_left"
+            android:layout_width="@dimen/address_line_select_layout_width"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_below="@+id/list_address_name"
+                android:id="@+id/list_address_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="龙华富士康A区东环二路F7栋"
+                android:textSize="@dimen/address_line_select_textSize"/>
+
+            <TextView
+                android:id="@+id/list_address_detailed"
+                android:layout_marginLeft="@dimen/address_list_address_detailed_margin_left"
+                android:layout_toRightOf="@+id/list_address_select"
+                android:layout_below="@id/list_address_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="南大门门口"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="@dimen/address_line_select_textSize"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10px">
+
+            <LinearLayout
+                android:id="@+id/linearLayout_bianji"
+                android:layout_width="@dimen/address_relativeLayout_layout_width_2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginTop="@dimen/address_image_layout_top"
+                    android:layout_gravity="center"
+                    android:id="@+id/image"
+                    android:layout_marginLeft="@dimen/address_image_layout_left"
+                    android:layout_width="@dimen/address_image_layout_width"
+                    android:layout_height="@dimen/address_image_layout_height"
+                    android:src="@drawable/g17_compile_icon" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/address_image_layout_top"
+                    android:layout_gravity="center"
+                    android:id="@+id/bainji"
+                    android:layout_marginLeft="@dimen/address_bainji_margin_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="编辑"
+                    android:textSize="@dimen/address_line_select_textSize"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="@dimen/address_line_layout_top"
+                android:background="#1affffff"
+                android:layout_width="@dimen/address_line_layout_width"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/address_line_layout_height" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout_delete"
+                android:layout_width="@dimen/address_relativeLayout_layout_width_2"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_marginTop="@dimen/address_image_layout_top"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/address_image_layout_left"
+                    android:id="@+id/image_delet"
+                    android:layout_width="@dimen/address_image_layout_width"
+                    android:layout_height="@dimen/address_image_layout_height"
+                    android:src="@mipmap/icon_del" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/address_image_layout_top"
+                    android:layout_gravity="center"
+                    android:id="@+id/delet"
+                    android:layout_marginLeft="@dimen/address_bainji_margin_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="删除"
+                    android:textSize="@dimen/address_line_select_textSize"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../NabooApp.iml" filepath="$PROJECT_DIR$/../NabooApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../badgeviewlib/badgeviewlib.iml" filepath="$PROJECT_DIR$/../badgeviewlib/badgeviewlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calendarviewidx.iml" filepath="$PROJECT_DIR$/calendarviewidx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mor-sdk-network-lib/mor-sdk-network-lib.iml" filepath="$PROJECT_DIR$/../mor-sdk-network-lib/mor-sdk-network-lib.iml" />
+    </modules>
+  </component>
+</project>

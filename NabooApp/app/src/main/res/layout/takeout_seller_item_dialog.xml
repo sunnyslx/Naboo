@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/takeout_2_food_detail_width"
+    android:layout_height="@dimen/takeout_2_food_detail_height"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/takeout_seller_item_dialog_ll"
+        android:layout_width="@dimen/takeout_2_food_detail_image_height_width"
+        android:layout_height="@dimen/takeout_2_food_detail_image_height_width"
+        android:layout_margin="@dimen/takeout_2_food_detail_image_margin"
+        android:background="@drawable/takeout_item_image"
+        android:gravity="center">
+        <!--android:layout_width="@dimen/takeout_6_seller_dialog_image_width_height"-->
+        <!--android:layout_height="@dimen/takeout_6_seller_dialog_image_width_height"-->
+
+        <ImageView
+            android:id="@+id/takeout_seller_item_dialog_food"
+            android:layout_width="@dimen/takeout_2_food_detail_image_height_width"
+            android:layout_height="@dimen/takeout_2_food_detail_image_height_width"
+            android:src="@mipmap/takeout_order_item_food"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/takeout_2_food_detail_name_width"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/takeout_2_food_detail_name_margin_bottom"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/takeout_2_food_detail_name_margin_top">
+
+        <TextView
+            android:id="@+id/takeout_seller_item_dialog_food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/takeout_6_seller_dialog_food_name_height"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text=""
+            android:textColor="#212121"
+            android:textSize="@dimen/takeout_2_food_detail_name_size" />
+
+        <TextView
+            android:id="@+id/takeout_seller_item_dialog_sale_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/takeout_6_seller_dialog_sale_margin_top"
+            android:text=""
+            android:textColor="#99212121"
+            android:textSize="@dimen/takeout_1_base_text_size" />
+
+        <TextView
+            android:id="@+id/takeout_seller_item_dialog_free"
+            android:layout_width="@dimen/takeout_2_food_detail_free_width"
+            android:layout_height="@dimen/takeout_2_food_detail_free_height"
+            android:background="@drawable/takeout_seller_detail_free"
+            android:layout_marginTop="@dimen/takeout_6_seller_dialog_free_margin_top"
+            android:gravity="center"
+            android:text="5.0折优惠"
+            android:textColor="#fff"
+            android:textSize="@dimen/takeout_1_base_text_size"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/takeout_6_seller_dialog_price_margin_top">
+
+            <TextView
+                android:id="@+id/takeout_seller_item_dialog_now_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#007eff"
+                android:textSize="@dimen/takeout_2_food_detail_now_price_size" />
+
+            <TextView
+                android:id="@+id/takeout_seller_item_dialog_old_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#4d212121"
+                android:layout_marginLeft="@dimen/takeout_6_seller_dialog_price_margin_right"
+                android:textSize="@dimen/takeout_1_base_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/takeout_seller_item_dialog_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:background="@null"
+        android:src="@mipmap/buttn_error" />
+</LinearLayout>

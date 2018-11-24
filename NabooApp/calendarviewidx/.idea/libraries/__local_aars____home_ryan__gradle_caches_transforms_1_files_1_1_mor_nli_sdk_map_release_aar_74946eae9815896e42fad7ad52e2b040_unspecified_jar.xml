@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="__local_aars__:/home/ryan/.gradle/caches/transforms-1/files-1.1/mor-nli-sdk-map-release.aar/74946eae9815896e42fad7ad52e2b040:unspecified@jar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/mor-nli-sdk-map-release.aar/74946eae9815896e42fad7ad52e2b040/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/mor-nli-sdk-map-release.aar/74946eae9815896e42fad7ad52e2b040/jars/libs/AMap3DMap_5.0.0_AMapNavi_5.0.1_AMapSearch_5.0.0_AMapLocation_3.3.0_20170410.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/mor-nli-sdk-map-release.aar/74946eae9815896e42fad7ad52e2b040/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

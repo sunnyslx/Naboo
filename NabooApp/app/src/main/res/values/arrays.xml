@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="voice_welcome">
+        <item>有什么事吗？</item>
+        <item>有事吗？</item>
+    </string-array>
+
+    <string-array name="voice_nothing">
+        <item>没什么事请说再见！</item>
+        <item>没什么事情请说再见！</item>
+        <item>没有什么事请说再见！</item>
+        <item>没有什么事情请说再见！</item>
+    </string-array>
+
+    <string-array name="voice_timeout">
+        <item>好像没有什么事，下次再见！</item>
+        <item>想好了再告诉我吧，下次再见！</item>
+        <item>等得我花儿都谢啦，下次再见！</item>
+    </string-array>
+
+    <string-array name="voice_bye">
+        <item>再见！</item>
+        <item>好的，再见！</item>
+        <item>好的，下次再见！</item>
+    </string-array>
+
+    <string-array name="voice_repeat">
+        <item>对不起，请重复！</item>
+        <item>请你再说一次！</item>
+        <item>请你再说一遍！</item>
+    </string-array>
+
+    <string-array name="voice_sorry">
+        <item>对不起，找不到信息!</item>
+        <item>对不起，找不到你要的信息!</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151414">
+
+    <Button
+        android:id="@+id/takeout_seller_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/takeout_2_back_margin_left"
+        android:layout_marginTop="@dimen/takeout_2_back_margin_top"
+        android:background="@null"
+        android:drawableLeft="@mipmap/path"
+        android:drawablePadding="@dimen/takeout_3_car_back_text_image_margin"
+        android:text="@string/takeout_seller_title"
+        android:textColor="#fff"
+        android:textSize="@dimen/takeout_1_base_text_size" />
+
+    <ImageView
+        android:layout_width="@dimen/takeout_1_logo_width_height"
+        android:layout_height="@dimen/takeout_1_logo_width_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/takeout_1_logo_margin_right"
+        android:layout_marginTop="@dimen/takeout_1_logo_margin_top"
+        android:src="@mipmap/takeout_logo" />
+
+    <RelativeLayout
+        android:id="@+id/takeout_seller_rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/takeout_2_main_margin_top"
+        android:layout_marginLeft="@dimen/takeout_1_margin_left">
+
+        <LinearLayout
+            android:id="@+id/takeout_seller_ll_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RatingBar
+                android:id="@+id/takeout_seller_star"
+                style="@style/CustomRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:isIndicator="true"
+                android:rating="4.3" />
+
+            <TextView
+                android:id="@+id/takeout_seller_label"
+                android:layout_width="@dimen/takeout_2_free_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/takeout_2_rating_bar_margin_right"
+                android:background="@drawable/takeout_seller_free"
+                android:gravity="center"
+                android:text="优惠"
+                android:textColor="#b3ffffff"
+                android:textSize="@dimen/takeout_2_number_text_size" />
+
+            <View
+                android:layout_width="@dimen/takeout_2_line_width"
+                android:layout_height="@dimen/takeout_2_line_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/takeout_2_free_margin_right"
+                android:background="@color/takeout_seller_vertical_line" />
+
+            <TextView
+                android:id="@+id/takeout_seller_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/takeout_2_line_margin_right"
+                android:text="起送 ￥5 "
+                android:textColor="#b3ffffff"
+                android:textSize="@dimen/takeout_2_number_text_size" />
+
+            <View
+                android:layout_width="@dimen/takeout_2_line_width"
+                android:layout_height="@dimen/takeout_2_line_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/takeout_2_line_margin_right"
+                android:background="@color/takeout_seller_vertical_line" />
+
+            <TextView
+                android:id="@+id/takeout_seller_dispatcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/takeout_2_line_margin_right"
+                android:text="配送 ￥5 "
+                android:textColor="#b3ffffff"
+                android:textSize="@dimen/takeout_2_number_text_size" />
+
+            <View
+                android:layout_width="@dimen/takeout_2_line_width"
+                android:layout_height="@dimen/takeout_2_line_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/takeout_2_line_margin_right"
+                android:background="@color/takeout_seller_vertical_line" />
+
+            <TextView
+                android:id="@+id/takeout_seller_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/takeout_2_line_margin_right"
+                android:text="30分钟"
+                android:textColor="#b3ffffff"
+                android:textSize="@dimen/takeout_2_number_text_size" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/takeout_seller_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/takeout_seller_ll_1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/takeout_2_recycler_margin_bottom"
+            android:layout_marginTop="@dimen/takeout_2_recycler_margin_top" />
+
+        <LinearLayout
+            android:id="@+id/takeout_seller_xiao_fu_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/takeout_2_reply_margin_bottom">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/icon_voice" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/takeout_1_reply_text_margin_left"
+                android:text="@string/takeout_xiao_fu_reply"
+                android:textColor="#fff"
+                android:textSize="@dimen/takeout_1_base_text_size" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/takeout_seller_balance_rl"
+            android:layout_width="450dp"
+            android:layout_height="@dimen/takeout_2_balance_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/takeout_2_balance_margin_bottom"
+            android:layout_marginRight="@dimen/takeout_2_balance_margin_right"
+            android:background="@drawable/takeout_seller_shop_car">
+
+            <Button
+                android:id="@+id/takeout_seller_balance"
+                android:layout_width="@dimen/takeout_2_balance_width"
+                android:layout_height="@dimen/takeout_2_balance_height"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/takeout_seller_jie_suan_normal"
+                android:text="结算"
+                android:textSize="@dimen/takeout_1_base_text_size" />
+
+            <LinearLayout
+                android:id="@+id/takeout_seller_into_car"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/takeout_seller_balance"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/takeout_seller_car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/takeout_2_car_margin_right"
+                    android:src="@mipmap/icon_cart" />
+
+                <TextView
+                    android:id="@+id/activity_seller_gap_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/takeout_2_car_margin_right"
+                    android:text="还差￥5起送"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/takeout_1_base_text_size" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/takeout_seller_goods_count"
+            android:layout_width="@dimen/takeout_2_count_height_width"
+            android:layout_height="@dimen/takeout_2_count_height_width"
+            android:layout_alignLeft="@id/takeout_seller_balance_rl"
+            android:layout_marginLeft="@dimen/takeout_2_count_margin_left"
+            android:layout_marginBottom="@dimen/takeout_2_count_margin_bottom"
+            android:layout_alignBottom="@id/takeout_seller_balance_rl"
+            android:background="@drawable/takeout_seller_item_index"
+            android:gravity="center"
+            android:text=""
+            android:maxLength="4"
+            android:textColor="#000"
+            android:textSize="@dimen/takeout_2_number_text_size"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/takeout_seller_un_network"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/takeout_seller_back"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/takeout_un_network" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/net_error"
+            android:textColor="#fff"
+            android:textSize="28sp" />
+    </LinearLayout>
+</RelativeLayout>

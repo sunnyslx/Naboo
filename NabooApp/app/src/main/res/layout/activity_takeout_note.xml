@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151414"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/takeout_note_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/takeout_2_back_margin_left"
+        android:layout_marginTop="@dimen/takeout_2_back_margin_top"
+        android:background="@null"
+        android:drawableLeft="@mipmap/path"
+        android:drawablePadding="@dimen/takeout_3_car_back_text_image_margin"
+        android:text="@string/takeout_note_title"
+        android:textColor="#fff"
+        android:textSize="@dimen/takeout_1_base_text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/takeout_5_note_height"
+        android:layout_marginLeft="@dimen/takeout_1_margin_left"
+        android:layout_marginRight="@dimen/takeout_1_margin_left"
+        android:layout_marginTop="@dimen/takeout_5_note_margin_top"
+        android:background="@drawable/takeout_note_bg"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/takeout_note_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/takeout_5_note_margin_left"
+            android:layout_marginTop="@dimen/takeout_5_note_margin_left"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="口味、偏好等"
+            android:imeOptions="actionDone"
+            android:maxLength="45"
+            android:singleLine="false"
+            android:maxLines="2"
+            android:inputType="text"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="@dimen/takeout_2_number_text_size" />
+
+        <TextView
+            android:id="@+id/takeout_note_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="@dimen/takeout_5_note_margin_right"
+            android:layout_marginRight="@dimen/takeout_5_note_margin_right"
+            android:text="0/45"
+            android:textColor="#b3ffffff"
+            android:textSize="@dimen/takeout_2_number_text_size" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/takeout_note_save"
+        android:layout_width="@dimen/takeout_5_note_save_width"
+        android:layout_height="@dimen/takeout_5_note_save_height"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/takeout_4_order_extra_margin_bottom_top"
+        android:background="@drawable/takeout_note_save"
+        android:text="保存"
+        android:textColor="#fff"
+        android:textSize="@dimen/takeout_1_base_text_size" />
+</LinearLayout>

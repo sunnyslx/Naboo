@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151414">
+
+    <TextView
+        android:id="@+id/takeout_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/takeout_1_title_margin_top"
+        android:text="@string/takeout_title"
+        android:textColor="#fff"
+        android:textSize="@dimen/takeout_1_title_text_size"
+        android:layout_marginLeft="@dimen/takeout_1_margin_left" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/takeout_hot_free_dispatcher"-->
+        <!--android:layout_toRightOf="@id/takeout_hot"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/takeout_free_dispatcher"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:padding="5dp"-->
+        <!--android:text="免配送费"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textSize="20sp"-->
+        <!--android:visibility="gone"/>-->
+
+    <ImageView
+        android:layout_width="@dimen/takeout_1_logo_width_height"
+        android:layout_height="@dimen/takeout_1_logo_width_height"
+        android:src="@mipmap/takeout_logo"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/takeout_1_logo_margin_top"
+        android:layout_marginRight="@dimen/takeout_1_logo_margin_right"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/takeout_recycler_view"
+        android:layout_below="@id/takeout_hot"
+        android:layout_marginTop="@dimen/takeout_1_title_margin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/takeout_1_margin_left"/>
+
+    <LinearLayout
+        android:id="@+id/takeout_un_network"
+        android:layout_below="@id/takeout_hot"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/takeout_un_network"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/net_error"
+            android:textSize="28sp"
+            android:textColor="#fff"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/takeout_xiao_fu_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/takeout_1_margin_left"
+        android:layout_marginBottom="@dimen/takeout_1_reply_margin_bottom">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_voice"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/takeout_xiao_fu_reply"
+            android:textSize="@dimen/takeout_1_base_text_size"
+            android:textColor="#b3ffffff"
+            android:layout_marginLeft="@dimen/takeout_1_reply_text_margin_left"/>
+    </LinearLayout>
+</RelativeLayout>

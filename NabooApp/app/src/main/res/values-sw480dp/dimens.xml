@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize">36sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="list_item_padding">8dp</dimen>
+
+    //drawer
+    <dimen name="nav_header_textsize">14sp</dimen>
+
+    //setting
+    <dimen name="setting_voice_textsize">18sp</dimen>
+    <dimen name="setting_switch_textsize">12sp</dimen>
+    <dimen name="setting_about_textsize">18sp</dimen>
+    <dimen name="setting_voice_margin_top">10dp</dimen>
+    <dimen name="setting_divider_margin_top">6dp</dimen>
+    <dimen name="setting_about_margin_top">10dp</dimen>
+    <dimen name="setting_left">6dp</dimen>
+
+    //splash
+    <dimen name="splash_timeView_margin_top">176dp</dimen>
+    <dimen name="splash_dateView_margin_top">18dp</dimen>
+    <dimen name="splash_clothes_margin_top">42dp</dimen>
+    <dimen name="splash_car_margin_top">14dp</dimen>
+    <dimen name="splash_air_margin_top">14dp</dimen>
+    <dimen name="splash_timeView_textsize">104sp</dimen>
+    <dimen name="splash_dateView_textsize">24sp</dimen>
+    <dimen name="splash_weather_textsize">19sp</dimen>
+    <dimen name="splash_weather_image_width_size">48dp</dimen>
+    <dimen name="splash_weather_image_height_size">48dp</dimen>
+    <dimen name="splash_weather_margin_left">16dp</dimen>
+    <dimen name="splash_weather_tmp_width">220dp</dimen>
+    <dimen name="splash_weather_width">240dp</dimen>
+    <dimen name="splash_weather_margin_left_port">164dp</dimen>
+    <dimen name="splash_weather_margin_left_land">298dp</dimen>
+
+    //calendar
+    <dimen name="calendar_rl_tool_height">40dp</dimen>
+    <dimen name="calendar_rl_tool_margintop">16dp</dimen>
+    <dimen name="calendar_rl_tool_marginleft">16dp</dimen>
+    <dimen name="calendar_rl_tool_marginbottom">8dp</dimen>
+    <dimen name="calendar_selectyear_width">40dp</dimen>
+    <dimen name="calendar_selectyear_marginleft">8dp</dimen>
+    <dimen name="calendar_selectmonth_width">40dp</dimen>
+    <dimen name="calendar_event_marginleft">8dp</dimen>
+    <dimen name="calendar_event_marginright">16dp</dimen>
+    <dimen name="calendar_view_height">0.5dp</dimen>
+    <dimen name="calendar_view_marginleft">12dp</dimen>
+    <dimen name="calendar_view_marginright">12dp</dimen>
+    <dimen name="calendar_dialog_margin">2dp</dimen>
+    <dimen name="calendar_recycler_item_height">40dp</dimen>
+    <dimen name="calendar_recycler_time_marright">16dp</dimen>
+    <dimen name="calendar_recycler_time_marleft">40dp</dimen>
+    <dimen name="calendar_recycler_thing_marleft">24dp</dimen>
+    <dimen name="calendar_recycler_delete_width">90dp</dimen>
+
+    <dimen name="calendar_textsize_two_six">20sp</dimen>
+    <dimen name="calendar_lunar_textsize">6sp</dimen>
+    <dimen name="calendar_dialog_title_textsize">32sp</dimen>
+    <dimen name="calendar_dialog_edit_textsize">24sp</dimen>
+    <dimen name="calendar_dialog_button_textsize">24sp</dimen>
+    <dimen name="calendar_recycler_textsize">14sp</dimen>
+    <dimen name="calendar_week_textsize">10sp</dimen>
+    <dimen name="calendar_textsize_select">12sp</dimen>
+
+    //music
+    <dimen name="music_title_marginBottom">21px</dimen>
+    <dimen name="music_title_width">390px</dimen>
+    <dimen name="music_title_height">39px</dimen>
+    <dimen name="music_singer_height">390px</dimen>
+    <dimen name="music_singer_marginTitle">21px</dimen>
+    <dimen name="music_album_width">246px</dimen>
+    <dimen name="music_album_height">246px</dimen>
+    <dimen name="music_currentTime_marginStart">43px</dimen>
+    <dimen name="music_album_marginSinger">35px</dimen>
+    <dimen name="music_duration_marginEnd">14dp</dimen>
+    <dimen name="music_seekBar_marginAlbum">43px</dimen>
+    <dimen name="music_mode_width">57px</dimen>
+    <dimen name="music_next_width">50px</dimen>
+    <dimen name="music_play_width">71px</dimen>
+    <dimen name="music_list_title_marginTop">35px</dimen>
+    <dimen name="music_list_artist_marginTitle">18px</dimen>
+    <dimen name="music_list_title_width">266px</dimen>
+    <dimen name="music_list_title_height">32px</dimen>
+    <dimen name="music_list_artist_height">28px</dimen>
+    <dimen name="music_list_index_marginEnd">27px</dimen>
+    <dimen name="music_list_title_marginEnd">19px</dimen>
+    <dimen name="music_play_marginList">108px</dimen>
+    <dimen name="music_list_margin">40px</dimen>
+
+    <dimen name="music_titleSize">39px</dimen>
+    <dimen name="music_singerSize">35px</dimen>
+    <dimen name="music_durationSize">28px</dimen>
+    <dimen name="music_list_titleSize">32px</dimen>
+    <dimen name="music_list_singerSize">28px</dimen>
+
+    //weather
+    <dimen name="weather_icon_width">124px</dimen>
+    <dimen name="weather_icon_height">124px</dimen>
+    <dimen name="weather_icon_marginStart">83px</dimen>
+    <dimen name="weather_icon_marginTop">82px</dimen>
+    <dimen name="weather_city_marginIcon">18px</dimen>
+    <dimen name="weather_recycleView_marginCity">32px</dimen>
+    <dimen name="weather_list_date_marginTop">35px</dimen>
+    <dimen name="weather_list_week_marginDate">25px</dimen>
+    <dimen name="weather_list_icon_width">62px</dimen>
+    <dimen name="weather_list_icon_height">62px</dimen>
+    <dimen name="weather_list_icon_marginWeek">25px</dimen>
+    <dimen name="weather_list_icon_marginStart">73px</dimen>
+    <dimen name="weather_list_tem_marginIcon">21px</dimen>
+    <dimen name="weather_recycleView_height">278px</dimen>
+    <dimen name="weather_recycleView_width">207px</dimen>
+    <dimen name="weather_dateWeek_marginTop">28px</dimen>
+    <dimen name="weather_describe_marginDateweek">64px</dimen>
+    <dimen name="weather_describe_marginLeftLine">57px</dimen>
+    <dimen name="weather_temp_marginLeftLine">20px</dimen>
+    <dimen name="weather_line_width">1px</dimen>
+    <dimen name="weather_line_height">159px</dimen>
+    <dimen name="weather_leftLine_marginAir">85px</dimen>
+    <dimen name="weather_rays_marginRecycleView">71px</dimen>
+    <dimen name="weather_rays_marginAir">19px</dimen>
+    <dimen name="weather_rays_marginData">11px</dimen>
+
+    <dimen name="weather_describe_textSize">64px</dimen>
+    <dimen name="weather_city_textSize">35px</dimen>
+    <dimen name="weather_temp_textSize">46px</dimen>
+    <dimen name="weather_dateWeek_textSize">26px</dimen>
+    <dimen name="weather_ray_textSize">35px</dimen>
+    <dimen name="weather_list_date_textSize">26px</dimen>
+    <dimen name="weather_list_temp_textSize">30px</dimen>
+
+    //video
+    <dimen name="video_image_width">229px</dimen>
+    <dimen name="video_image_height">284px</dimen>
+    <dimen name="video_image_marginStart">49px</dimen>
+    <dimen name="video_image_marginTop">78px</dimen>
+    <dimen name="video_title_marginImage">14px</dimen>
+    <dimen name="video_grade_marginTitle">14px</dimen>
+    <dimen name="video_title_width">229px</dimen>
+    <dimen name="video_image_marginEnd">35px</dimen>
+
+    <dimen name="video_index_textSize">22px</dimen>
+    <dimen name="video_title_textSize">28px</dimen>
+    <dimen name="video_grade_textSize">22px</dimen>
+
+    //dish
+    <dimen name="dish_name_marginStart">53px</dimen>
+    <dimen name="dish_name_marginTop">32px</dimen>
+    <dimen name="dish_material_marginName">60px</dimen>
+    <dimen name="dish_image_marginMaterial">28px</dimen>
+    <dimen name="dish_food_marginImage">60px</dimen>
+    <dimen name="dish_step_image_marginStep">28px</dimen>
+    <dimen name="dish_grade_marginImage">40px</dimen>
+    <dimen name="dish_step_marginImage">39px</dimen>
+    <dimen name="dish_imageWidth">198px</dimen>
+    <dimen name="dish_imageHeight">198px</dimen>
+
+    <dimen name="dish_name_textSize">28px</dimen>
+    <dimen name="dish_material_textSize">35px</dimen>
+    <dimen name="dish_step_textSize">32px</dimen>
+    //打电话
+    <dimen name="little_surface_width">120dp</dimen>
+    <dimen name="little_surface_height">144dp</dimen>
+    <dimen name="little_surface_margin_right">13dp</dimen>
+    <dimen name="little_surface_margin_top">77dp</dimen>
+    <dimen name="video_call_float_window_size_body">10sp</dimen>
+    <dimen name="video_call_margin_large">11dp</dimen>
+    <dimen name="video_call_elevation_dwarf">6dp</dimen>
+    <dimen name="video_call_margin_normal">6dp</dimen>
+    <dimen name="float_little_surface_opposite_width">63dp</dimen>
+    <dimen name="float_little_surface_opposite_height">78dp</dimen>
+    <dimen name="float_little_surface_local_width">14dp</dimen>
+    <dimen name="float_little_surface_local_height">21dp</dimen>
+    <dimen name="miss_call_text_width_height">16dp</dimen>
+    <dimen name="miss_call_text_margin_top_right">4dp</dimen>
+    <dimen name="miss_call_text_size">10sp</dimen>
+
+    //地址列表
+    <dimen name="address_text_id_margin_left">20px</dimen>
+    <dimen name="address_text_id_layout_width">40px</dimen>
+    <dimen name="address_text_id_layout_height">40px</dimen>
+    <dimen name="address_text_id_textsize">27sp</dimen>
+
+    <dimen name="address_relativeLayout_margin_Top">40px</dimen>
+    <dimen name="address_relativeLayout_margin_left">20px</dimen>
+    <dimen name="address_relativeLayout_layout_width">1100px</dimen>
+    <dimen name="address_relativeLayout_layout_height">155px</dimen>
+
+    <dimen name="address_labels_margin_Top">17px</dimen>
+    <dimen name="address_labels_margin_left">35px</dimen>
+    <dimen name="address_labels_layout_width">156px</dimen>
+    <dimen name="address_labels_layout_height">50px</dimen>
+    <dimen name="address_labels_layout_textSize">27sp</dimen>
+
+    <dimen name="address_list_address_name_margin_Top">30px</dimen>
+    <dimen name="address_list_address_name_margin_left">45px</dimen>
+    <dimen name="address_list_address_phone_margin_left">25px</dimen>
+
+    <dimen name="address_line_select_margin_Top">20px</dimen>
+    <dimen name="address_line_select_margin_left">35px</dimen>
+    <dimen name="address_line_select_layout_height">40px</dimen>
+    <dimen name="address_line_select_layout_width">900px</dimen>
+    <dimen name="address_line_select_textSize">34sp</dimen>
+    <dimen name="address_list_address_detailed_margin_left">10px</dimen>
+
+    <dimen name="address_text_1_margin_top">31px</dimen>
+    <dimen name="address_text_1_margin_left">10px</dimen>
+    <dimen name="address_text_1_layout_width">2px</dimen>
+    <dimen name="address_text_1_layout_height">92px</dimen>
+
+    <dimen name="address_image_layout_width">35px</dimen>
+    <dimen name="address_image_layout_height">35px</dimen>
+    <dimen name="address_image_layout_top">60px</dimen>
+    <dimen name="address_image_layout_left">65px</dimen>
+    <dimen name="address_bainji_textSize">34px</dimen>
+    <dimen name="address_bainji_margin_left">15px</dimen>
+
+    //新闻
+    //新闻标签
+    <dimen name="news_label_width">109px</dimen>
+    <dimen name="news_label_height">35px</dimen>
+    <dimen name="news_label_margin_left">35px</dimen>
+    <dimen name="news_label_margin_top">32px</dimen>
+    <dimen name="news_label_radius">2px</dimen>
+    <dimen name="news_label_text_size">22px</dimen>
+    //新闻标题
+    <dimen name="news_title_text_size">38px</dimen>
+    //新闻信息
+    <dimen name="news_info_text_size">35px</dimen>
+    <dimen name="news_info_margin_top">28px</dimen>
+    <dimen name="news_info_padding_left">35px</dimen>
+    <dimen name="news_info_padding_right">35px</dimen>
+    //新闻线条
+    <dimen name="news_line_margin_top">17px</dimen>
+    <dimen name="news_line_margin_left">35px</dimen>
+    <dimen name="news_line_margin_right">35px</dimen>
+    <dimen name="news_line_height">1px</dimen>
+    //新闻内容
+    <dimen name="news_content_margin_top">20px</dimen>
+    <dimen name="news_content_margin_left">20px</dimen>
+    <dimen name="news_content_margin_right">20px</dimen>
+    <dimen name="news_content_line_space">37px</dimen>
+    <dimen name="news_content_text_size">38px</dimen>
+    //新闻导航栏
+    <dimen name="news_navigation_bar_margin_left">41px</dimen>
+    <dimen name="news_navigation_bar_margin_right">41px</dimen>
+    <dimen name="news_navigation_bar_margin_bottom">20px</dimen>
+    <dimen name="news_navigation_bar_text_size">31px</dimen>
+    <dimen name="news_navigation_bar_height">70px</dimen>
+    //新闻标题栏
+    <dimen name="news_title_bar_padding_left">35px</dimen>
+    <dimen name="news_title_bar_margin_top">31px</dimen>
+    <dimen name="news_title_bar_text_size">28px</dimen>
+    <dimen name="news_title_bar_height">69px</dimen>
+    <dimen name="news_title_bar_line_height">1px</dimen>
+    //新闻滚动条
+    <dimen name="news_scroll_bar_margin_right">13px</dimen>
+    <dimen name="news_scroll_bar_margin_left">13px</dimen>
+    <dimen name="news_scroll_bar_margin_top">70px</dimen>
+    <dimen name="news_scroll_bar_margin_bottom">70px</dimen>
+    <dimen name="news_scroll_bar_width">5px</dimen>
+    <dimen name="news_scroll_bar_radius">2px</dimen>
+
+    //人物
+    //人物人名
+    <dimen name="figure_name_text_size">24px</dimen>
+    <dimen name="figure_name_padding_top">31px</dimen>
+    <dimen name="figure_name_padding_left">32px</dimen>
+    <dimen name="figure_name_height">70px</dimen>
+
+    //人物详情
+    <dimen name="figure_information_margin_top">70px</dimen>
+
+    //人物图片
+    <dimen name="figure_image_width">230px</dimen>
+    <dimen name="figure_image_height">307px</dimen>
+    <dimen name="figure_image_margin_top">35px</dimen>
+    <dimen name="figure_image_margin_left">35px</dimen>
+    <dimen name="figure_image_radius">6px</dimen>
+
+    //人物简介
+    <dimen name="figure_experience_text_size">38px</dimen>
+    <dimen name="figure_experience_margin_right">35px</dimen>
+    <dimen name="figure_experience_margin_left">28px</dimen>
+    <dimen name="figure_experience_line_space">37px</dimen>
+    <dimen name="figure_experience_padding_top">7px</dimen>
+    <dimen name="figure_experience_padding_bottom">20px</dimen>
+
+    //人物信息
+    <dimen name="figure_info_text_size">24px</dimen>
+    <dimen name="figure_info_margin_left">13px</dimen>
+    <dimen name="figure_info_margin_right">13px</dimen>
+    <dimen name="figure_info_margin_top1">28px</dimen>
+    <dimen name="figure_info_margin_top2">20px</dimen>
+    <dimen name="figure_info_margin_top3">20px</dimen>
+    <dimen name="figure_info_width1">99px</dimen>
+    <dimen name="figure_info_width2">198px</dimen>
+
+    //map
+    //第一页切图
+    <dimen name="map_search_width">314px</dimen>
+    <dimen name="map_search_height">113px</dimen>
+    <dimen name="map_search_hint_text_size">32px</dimen>
+    <dimen name="map_big_small_icon_width">102px</dimen>
+    <dimen name="map_big_small_icon_height">170px</dimen>
+    <dimen name="map_big_small_icon_margin_bottom">11px</dimen>
+    <dimen name="map_big_small_icon_margin_right">15px</dimen>
+    //第二页切图
+    <dimen name="map_search_icon_width">71px</dimen>
+    <dimen name="map_search_icon_height">71px</dimen>
+    <dimen name="map_search_text_size">32px</dimen>
+    <dimen name="map_search_text_margin_left">16px</dimen>
+    <dimen name="map_search_delete_width">16dp</dimen>
+    <dimen name="map_search_delete_height">16dp</dimen>
+    <dimen name="map_search_delete_margin_right">12dp</dimen>
+    //第三页切图
+    <dimen name="map_search_content_margin_left">37px</dimen>
+    <dimen name="map_search_content_add_margin_top">16px</dimen>
+    <dimen name="map_search_content_add_margin_bottom">17px</dimen>
+    <dimen name="map_search_content_text_size">32px</dimen>
+    <dimen name="map_search_content_add_text_size">26px</dimen>
+    <dimen name="map_search_content_dis_text_size">26px</dimen>
+    //第四页切图
+    <dimen name="left_fragment_width">456px</dimen>
+    <dimen name="order_icon_margin_left">24px</dimen>
+    <dimen name="order_icon_width">32px</dimen>
+    <dimen name="order_icon_height">32px</dimen>
+    <dimen name="order_icon_text">16sp</dimen>
+    <dimen name="result_title_margin_left">14px</dimen>
+    <dimen name="result_title_margin_top">24px</dimen>
+    <dimen name="result_title_size">32px</dimen>
+    <dimen name="result_add_margin_left">69px</dimen>
+    <dimen name="result_add_margin_top">24px</dimen>
+    <dimen name="result_add_size">27px</dimen>
+    <dimen name="result_dis_margin_left">69px</dimen>
+    <dimen name="result_dis_margin_top">24px</dimen>
+    <dimen name="result_dis_margin_bottom">21px</dimen>
+    <dimen name="result_dis_size">26px</dimen>
+    <dimen name="route_icon_margin_right">24px</dimen>
+    <dimen name="result_content_width">408px</dimen>
+    <dimen name="route_icon_width">109px</dimen>
+    <dimen name="route_icon_height">33px</dimen>
+    <dimen name="route_icon_padding">12dp</dimen>
+    //第五页切图
+    <dimen name="detail_title_size">32px</dimen>
+    <dimen name="detail_back_icon_width">67px</dimen>
+    <dimen name="detail_title_margin_top">45px</dimen>
+    <dimen name="detail_rating_margin_left">67px</dimen>
+    <dimen name="detail_rating_margin_top">11px</dimen>
+    <dimen name="detail_type_margin_left">32px</dimen>
+    <dimen name="detail_type_size">26px</dimen>
+    <dimen name="detail_icon_width">24px</dimen>
+    <dimen name="detail_icon_height">24px</dimen>
+    <dimen name="detail_icon_margin_left">24px</dimen>
+    <dimen name="detail_icon_margin_top">24px</dimen>
+    <dimen name="detail_text_margin_left">22px</dimen>
+    <dimen name="detail_text_size">26px</dimen>
+    <dimen name="detail_route_icon_width">109px</dimen>
+    <dimen name="detail_route_icon_height">33px</dimen>
+    <dimen name="detail_text_margin_top">40px</dimen>
+    <dimen name="detail_text_addr_margin_top">32px</dimen>
+    <dimen name="detail_img_width">101px</dimen>
+    <dimen name="detail_img_height">101px</dimen>
+    <dimen name="detail_img_margin_left">22px</dimen>
+    <dimen name="detail_img_margin_between">16px</dimen>
+    //第六页切图
+    <dimen name="route_back_icon_margin_left">24px</dimen>
+    <dimen name="route_back_icon_margin_top">43px</dimen>
+    <dimen name="route_start_margin_left">22px</dimen>
+    <dimen name="route_start_margin_top">24px</dimen>
+    <dimen name="route_start_text_size">32px</dimen>
+    <dimen name="route_end_margin_left">70px</dimen>
+    <dimen name="route_end_margin_top">16px</dimen>
+    <dimen name="route_end_text_size">32px</dimen>
+    <dimen name="route_drive_icon_width">101px</dimen>
+    <dimen name="route_drive_icon_height">41px</dimen>
+    <dimen name="route_drive_icon_margin_top">21px</dimen>
+    <dimen name="route_drive_icon_between">16px</dimen>
+    <dimen name="route_drive_icon_margin_left">16px</dimen>
+    <dimen name="route_drive_icon_margin_bottom">27px</dimen>
+    <dimen name="route_bus_icon_margin_left">10px</dimen>
+
+    //login
+    <dimen name="Register_line_name_start">144px</dimen>
+    <dimen name="Register_line_name_top">40dp</dimen>
+    <dimen name="Register_line_name_height">48px</dimen>
+    <dimen name="Register_line_name_text_width">120dp</dimen>
+    <dimen name="Register_line_name_text_size">22sp</dimen>
+    <dimen name="register_userName_text_width">495px</dimen>
+    <dimen name="register_userName_text_left">16dp</dimen>
+    <dimen name="register_linear_button_top">24dp</dimen>
+    <dimen name="register_linear_button_start">146px</dimen>
+    <dimen name="register_linear_button_end">146px</dimen>
+    <dimen name="register_button_start">16dp</dimen>
+    <dimen name="register_button_end">16dp</dimen>
+    <dimen name="register_button_textsize">22sp</dimen>
+    <dimen name="login_line_name_top">40dp</dimen>
+    <dimen name="login_line_name_start">200px</dimen>
+    <dimen name="login_line_name_end">32dp</dimen>
+    <dimen name="login_line_name_height">48dp</dimen>
+    <dimen name="login_line_name_pwd_start">200dp</dimen>
+    <dimen name="login_button_width">160dp</dimen>
+    <dimen name="login_CheckBox_right">39dp</dimen>
+
+    //外卖
+    <dimen name="takeout_1_margin_left">38px</dimen>
+    <dimen name="takeout_1_logo_margin_right">38px</dimen>
+    <dimen name="takeout_2_balance_margin_right">38px</dimen>
+    <dimen name="takeout_2_count_height_width">38px</dimen>
+    <dimen name="takeout_2_food_count_width">38px</dimen>
+    <dimen name="takeout_1_title_margin_top">32px</dimen>
+    <dimen name="takeout_2_total_price_size">32px</dimen>
+    <dimen name="takeout_2_food_detail_name_width">254px</dimen>
+    <dimen name="takeout_1_title_margin_bottom">21px</dimen>
+    <dimen name="takeout_1_logo_margin_top">14px</dimen>
+    <dimen name="takeout_1_logo_width_height">50px</dimen>
+    <dimen name="takeout_1_reply_margin_bottom">26px</dimen>
+    <dimen name="takeout_1_reply_text_margin_left">14px</dimen>
+    <dimen name="takeout_1_base_text_size">28px</dimen>
+    <dimen name="takeout_1_title_text_size">28px</dimen>
+    <dimen name="takeout_1_number_text_size">25px</dimen>
+    <dimen name="takeout_1_item_food_name_size">28px</dimen>
+    <dimen name="takeout_1_item_text_size">21px</dimen>
+    <dimen name="takeout_1_item_time_size">21px</dimen>
+    <dimen name="takeout_1_item_image_width">196px</dimen>
+    <dimen name="takeout_1_item_food_width">196px</dimen>
+    <dimen name="takeout_1_item_food_height">61px</dimen>
+    <dimen name="takeout_1_item_car_margin_top">18px</dimen>
+    <dimen name="takeout_1_item_car_margin_right">7px</dimen>
+    <dimen name="takeout_1_item_image_height_width">196px</dimen>
+    <dimen name="takeout_1_item_smart_image_width_height">183px</dimen>
+    <dimen name="takeout_1_item_name_margin_top">21px</dimen>
+    <dimen name="takeout_1_item_margin_right">35px</dimen>
+    <dimen name="takeout_2_main_margin_top">91px</dimen>
+    <dimen name="takeout_2_reply_margin_bottom">7px</dimen>
+    <dimen name="takeout_2_number_text_size">22px</dimen>
+    <dimen name="takeout_2_back_margin_left">21px</dimen>
+    <dimen name="takeout_2_back_margin_top">32px</dimen>
+    <dimen name="takeout_2_back_margin_bottom">21px</dimen>
+    <dimen name="takeout_2_rating_bar_margin_right">14px</dimen>
+    <dimen name="takeout_2_free_width">56px</dimen>
+    <dimen name="takeout_2_free_margin_right">17px</dimen>
+    <dimen name="takeout_2_line_width">2px</dimen>
+    <dimen name="takeout_2_line_height">24px</dimen>
+    <dimen name="takeout_2_line_margin_right">21px</dimen>
+    <dimen name="takeout_2_recycler_margin_top">21px</dimen>
+    <dimen name="takeout_2_balance_margin_bottom">2px</dimen>
+    <dimen name="takeout_2_balance_height">56px</dimen>
+    <dimen name="takeout_2_balance_rl_width">352px</dimen>
+    <dimen name="takeout_2_count_margin_left">32px</dimen>
+    <dimen name="takeout_2_count_margin_bottom">30px</dimen>
+    <dimen name="takeout_2_balance_width">98px</dimen>
+    <dimen name="takeout_2_recycler_margin_bottom">64px</dimen>
+    <dimen name="takeout_2_recycler_item_index_size">22px</dimen>
+    <dimen name="takeout_2_recycler_item_price_margin_top">21px</dimen>
+    <dimen name="takeout_2_recycler_item_count_margin_top">22px</dimen>
+    <dimen name="takeout_2_recycler_item_add_margin_top">38px</dimen>
+    <dimen name="takeout_2_recycler_item_food_price_size">26px</dimen>
+    <dimen name="takeout_2_car_margin_right">14px</dimen>
+    <dimen name="takeout_2_food_name_margin_top">21px</dimen>
+    <dimen name="takeout_2_food_price_margin_top">14px</dimen>
+    <dimen name="takeout_2_food_detail_width">659px</dimen>
+    <dimen name="takeout_2_food_detail_height">362px</dimen>
+    <dimen name="takeout_2_food_detail_image_height_width">320px</dimen>
+    <dimen name="takeout_2_food_detail_image_margin">21px</dimen>
+    <dimen name="takeout_2_food_detail_name_size">35px</dimen>
+    <dimen name="takeout_2_food_detail_name_margin_top">21px</dimen>
+    <dimen name="takeout_2_food_detail_name_margin_bottom">25px</dimen>
+    <dimen name="takeout_2_food_detail_now_price_size">35px</dimen>
+    <dimen name="takeout_2_food_detail_free_width">141px</dimen>
+    <dimen name="takeout_2_food_detail_free_height">42px</dimen>
+    <dimen name="takeout_3_car_margin_top">122px</dimen>
+    <dimen name="takeout_3_car_margin_left">245px</dimen>
+    <dimen name="takeout_3_car_text_margin_left">338px</dimen>
+    <dimen name="takeout_3_car_text_margin_bottom">126px</dimen>
+    <dimen name="takeout_3_car_back_text_image_margin">18px</dimen>
+    <dimen name="takeout_3_car_clear_width">82px</dimen>
+    <dimen name="takeout_3_car_clear_height">35px</dimen>
+    <dimen name="takeout_3_car_clear_margin_right">28px</dimen>
+    <dimen name="takeout_3_car_clear_margin_top">38px</dimen>
+    <dimen name="takeout_3_car_content_margin_top">89px</dimen>
+    <dimen name="takeout_3_car_goods_margin_left">207px</dimen>
+    <dimen name="takeout_3_car_count_margin_left">267px</dimen>
+    <dimen name="takeout_3_car_price_margin_left">106px</dimen>
+    <dimen name="takeout_3_car_line_margin_top">14px</dimen>
+    <dimen name="takeout_3_car_total_height">70px</dimen>
+    <dimen name="takeout_3_car_total_text_size">32px</dimen>
+    <dimen name="takeout_3_car_total_detail_margin_left">50px</dimen>
+    <dimen name="takeout_3_car_total_detail_margin_bottom">7px</dimen>
+    <dimen name="takeout_3_car_balance_width">126px</dimen>
+    <dimen name="takeout_4_order_item_food_name_width">350px</dimen>
+    <dimen name="takeout_4_order_item_price_margin_right">35px</dimen>
+    <dimen name="takeout_3_car_item_index_width_height">35px</dimen>
+    <dimen name="takeout_3_car_empty_text_margin_top">35px</dimen>
+    <dimen name="takeout_4_order_seller_name_margin_top">35px</dimen>
+    <dimen name="takeout_4_order_item_index_width">44px</dimen>
+    <dimen name="takeout_4_order_address_add_margin_right">28px</dimen>
+    <dimen name="takeout_4_order_seller_margin_top">28px</dimen>
+    <dimen name="takeout_4_order_seller_name_margin_bottom">28px</dimen>
+    <dimen name="friend_8_delete_margin_bottom">28px</dimen>
+    <dimen name="takeout_7_dispatcher_now_margin_top">28px</dimen>
+    <dimen name="takeout_6_seller_dialog_price_margin_top">28px</dimen>
+    <dimen name="takeout_5_note_margin_top">28px</dimen>
+    <dimen name="friend_8_add_margin_top">20px</dimen>
+    <dimen name="takeout_7_dispatcher_text_margin_top">20px</dimen>
+    <dimen name="takeout_7_dispatcher_now_margin_left">20px</dimen>
+    <dimen name="takeout_7_dispatcher_line_margin_top">10px</dimen>
+    <dimen name="takeout_3_car_item_margin_top_bottom">10px</dimen>
+    <dimen name="takeout_3_car_item_index_margin_left">10px</dimen>
+    <dimen name="takeout_5_note_margin_right">10px</dimen>
+    <dimen name="takeout_4_order_extra_margin_bottom_top">20px</dimen>
+    <dimen name="takeout_4_order_seller_name2_margin_top">20px</dimen>
+    <dimen name="takeout_3_car_total_price_margin_left">20px</dimen>
+    <dimen name="takeout_3_car_item_index_margin_right">20px</dimen>
+    <dimen name="takeout_4_order_balance_height">50px</dimen>
+    <dimen name="takeout_4_order_extra_margin_right">50px</dimen>
+    <dimen name="takeout_3_car_item_reduce_margin_top">50px</dimen>
+    <dimen name="takeout_3_car_balance_height">50px</dimen>
+    <dimen name="takeout_3_car_item_index_margin_top">50px</dimen>
+    <dimen name="takeout_3_car_item_count_width">50px</dimen>
+    <dimen name="takeout_3_car_list_margin_bottom">70px</dimen>
+    <dimen name="takeout_3_car_item_image_width_height">106px</dimen>
+    <dimen name="takeout_3_car_item_image_1_width_height">85px</dimen>
+    <dimen name="takeout_3_car_item_food_name_width">270px</dimen>
+    <dimen name="takeout_3_car_item_food_name_margin_top">14px</dimen>
+    <dimen name="takeout_3_car_item_count_margin_top">46px</dimen>
+    <dimen name="takeout_3_car_item_price_margin_right">78px</dimen>
+    <dimen name="takeout_3_car_item_old_price_size">17px</dimen>
+    <dimen name="takeout_3_car_item_height">134px</dimen>
+    <dimen name="takeout_3_car_reduce_margin_left">46px</dimen>
+    <dimen name="takeout_4_order_margin_top">91px</dimen>
+    <dimen name="takeout_4_order_address_height">165px</dimen>
+    <dimen name="takeout_4_order_address_phone_margin_top">14px</dimen>
+    <dimen name="takeout_4_order_seller_name2_margin_bottom">7px</dimen>
+    <dimen name="takeout_4_order_line_margin_left_right">42px</dimen>
+    <dimen name="takeout_4_order_extra_margin_left">85px</dimen>
+    <dimen name="takeout_4_order_extra_margin_top">14px</dimen>
+    <dimen name="takeout_4_order_extra_text_margin_top">14px</dimen>
+    <dimen name="takeout_4_order_note_height">70px</dimen>
+    <dimen name="takeout_4_order_balance_width">166px</dimen>
+    <dimen name="takeout_4_order_item_height">106px</dimen>
+    <dimen name="takeout_4_order_item_index_margin_left">42px</dimen>
+    <dimen name="takeout_4_order_item_count_margin_right">14px</dimen>
+    <dimen name="takeout_4_order_item_line_margin_top">13px</dimen>
+    <dimen name="takeout_4_order_item_count_width">85px</dimen>
+    <dimen name="takeout_5_note_height">120px</dimen>
+    <dimen name="takeout_5_note_margin_left">22px</dimen>
+    <dimen name="takeout_5_note_save_width">163px</dimen>
+    <dimen name="takeout_5_note_save_height">56px</dimen>
+    <dimen name="takeout_5_pay_text_margin_top">130px</dimen>
+    <dimen name="takeout_5_pay_we_chat_margin_top">42px</dimen>
+    <dimen name="takeout_5_pay_ali_pay_margin_top">60px</dimen>
+    <dimen name="takeout_5_pay_ali_pay_margin_left">180px</dimen>
+    <dimen name="takeout_5_pay_qr_code_width_height">208px</dimen>
+    <dimen name="takeout_5_pay_qr_code_image_width_height">194px</dimen>
+    <dimen name="takeout_5_pay_time_out_width">563px</dimen>
+    <dimen name="takeout_5_pay_time_out_height">282px</dimen>
+    <dimen name="takeout_5_pay_time_out_text_margin_top">81px</dimen>
+    <dimen name="takeout_5_pay_time_out_margin_top">74px</dimen>
+    <dimen name="takeout_5_pay_time_out_btn_width">182px</dimen>
+    <dimen name="takeout_5_pay_time_out_btn_height">56px</dimen>
+    <dimen name="takeout_6_seller_dialog_image_width_height">302px</dimen>
+    <dimen name="takeout_6_seller_dialog_sale_margin_top">14px</dimen>
+    <dimen name="takeout_6_seller_dialog_free_margin_top">42px</dimen>
+    <dimen name="takeout_6_seller_dialog_price_margin_right">7px</dimen>
+    <dimen name="takeout_6_seller_dialog_food_name_height">91px</dimen>
+    <dimen name="takeout_6_seller_reply_margin_bottom">7px</dimen>
+    <dimen name="takeout_7_dispatcher_width">578px</dimen>
+    <dimen name="takeout_7_dispatcher_height">317px</dimen>
+    <dimen name="takeout_7_dispatcher_item_height">42px</dimen>
+    <dimen name="friend_8_edit_width">493px</dimen>
+    <dimen name="friend_8_save_width">169px</dimen>
+    <dimen name="friend_8_save_height">64px</dimen>
+    <dimen name="friend_8_delete_margin_top">70px</dimen>
+    <dimen name="friend_8_delete_width">450px</dimen>
+    <dimen name="friend_8_delete_height">226px</dimen>
+    <dimen name="friend_8_delete_btn_width">141px</dimen>
+    <dimen name="friend_8_delete_btn_height">45px</dimen>
+    <dimen name="friend_8_delete_btn_margin">22px</dimen>
+    <dimen name="friend_9_free_width">64px</dimen>
+    <dimen name="friend_9_free_height">34px</dimen>
+    <dimen name="friend_10_add_menu_width">240px</dimen>
+    <dimen name="friend_10_add_menu_height">128px</dimen>
+    <dimen name="friend_10_add_menu_btn_top">9px</dimen>
+    <dimen name="friend_10_add_menu_btn_left_right">16px</dimen>
+    <dimen name="friend_10_add_menu_btn_txt_size">22sp</dimen>
+</resources>

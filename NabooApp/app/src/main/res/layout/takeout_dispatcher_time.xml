@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/takeout_item_image"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/takeout_dispatcher_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/buttn_error"
+        android:layout_margin="5dp"
+        android:layout_gravity="right"
+        android:background="@null"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="配送时间"
+        android:textSize="@dimen/takeout_2_food_detail_now_price_size"
+        android:textColor="#000"
+        android:layout_gravity="center_horizontal"/>
+    <!--android:layout_marginTop="@dimen/takeout_7_dispatcher_text_margin_top"-->
+    <TextView
+        android:id="@+id/takeout_dispatcher_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="立即送出 (12:00)"
+        android:textColor="#007eff"
+        android:textSize="@dimen/takeout_1_base_text_size"
+        android:layout_marginLeft="@dimen/takeout_7_dispatcher_now_margin_left"
+        android:layout_marginTop="@dimen/takeout_7_dispatcher_now_margin_top"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#333"
+        android:layout_marginTop="@dimen/takeout_7_dispatcher_line_margin_top"
+        android:layout_marginLeft="@dimen/takeout_7_dispatcher_now_margin_left"
+        android:layout_marginRight="@dimen/takeout_7_dispatcher_now_margin_left"/>
+
+    <ListView
+        android:id="@+id/takeout_dispatcher_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/takeout_7_dispatcher_now_margin_left"
+        android:layout_marginRight="@dimen/takeout_7_dispatcher_now_margin_left"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+naboo
+Password: 123456
+
+Alias: naboo
+Password: 123456
+Validity(years) : 25
+
+First and Last Name: Foxconn
+
+Organizational Unit: Foxconn
+
+Organizational: Foxconn 
+
+City or Locality : ShenZhen
+State or Province : GuangDong
+Country Code: 86

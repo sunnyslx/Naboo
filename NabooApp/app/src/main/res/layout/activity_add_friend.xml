@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151414">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <Button
+            android:id="@+id/add_friend_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/takeout_2_back_margin_left"
+            android:background="@null"
+            android:drawableLeft="@mipmap/path"
+            android:drawablePadding="@dimen/takeout_3_car_back_text_image_margin"
+            android:text="@string/call_add_friend"
+            android:textColor="#fff"
+            android:textSize="@dimen/takeout_1_base_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_marginLeft="91dp"
+        android:layout_marginTop="90.5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_below="@id/rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系人"
+            android:textSize="@dimen/takeout_2_food_detail_now_price_size"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/add_friend_name"
+            android:layout_toRightOf="@id/tv_1"
+            android:layout_below="@id/rl"
+            android:layout_marginLeft="19.5dp"
+            android:layout_width="@dimen/friend_8_edit_width"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="@dimen/takeout_2_food_detail_now_price_size"
+            android:textColor="#fff"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            style="@style/FriendEditText"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_below="@id/ll_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="91dp"
+        android:layout_marginTop="29.5dp">
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_below="@id/tv_1"
+            android:layout_alignLeft="@id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号"
+            android:textSize="@dimen/takeout_2_food_detail_now_price_size"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:id="@+id/add_friend_phone"
+            android:layout_toRightOf="@id/tv_2"
+            android:layout_below="@id/add_friend_name"
+            android:layout_marginLeft="19.5dp"
+            android:layout_width="@dimen/friend_8_edit_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/takeout_2_food_detail_now_price_size"
+            android:inputType="phone"
+            android:digits="1234567890"
+            android:textColor="#fff"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            style="@style/FriendEditText"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_friend_save"
+        android:layout_below="@id/ll_2"
+        android:layout_marginTop="111.5dp"
+        android:layout_width="@dimen/friend_8_save_width"
+        android:layout_height="@dimen/friend_8_save_height"
+        android:textColor="#fff"
+        android:textSize="@dimen/takeout_2_food_detail_now_price_size"
+        android:text="保存"
+        android:background="@drawable/takeout_note_save"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

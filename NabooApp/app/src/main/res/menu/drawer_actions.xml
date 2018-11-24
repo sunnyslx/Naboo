@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home_menu"
+            android:icon="@drawable/home_btn_icon"
+            android:title="首页0"/>
+
+        <item
+            android:id="@+id/setting_menu"
+            android:icon="@drawable/set_btn_icon"
+            android:title="设置0"/>
+
+        <item
+            android:id="@+id/personal_center_menu"
+            android:icon="@drawable/individua_center_icon"
+            android:title="个人中心0"/>
+
+        <item
+            android:id="@+id/address_book_menu"
+            android:icon="@drawable/contacts_btn_icon"
+            android:title="通讯录0"/>
+
+    </group>
+</menu>

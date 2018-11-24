@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151414">
+
+    <LinearLayout
+        android:id="@+id/takeout_order_ll_1"
+        android:background="#212121"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/takeout_4_order_margin_top">
+
+        <Button
+            android:id="@+id/takeout_order_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/takeout_2_back_margin_left"
+            android:drawableLeft="@mipmap/path"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/takeout_3_car_back_text_image_margin"
+            android:background="@null"
+            android:text="@string/takeout_submit_order_title"
+            android:textColor="#fff"
+            android:textSize="@dimen/takeout_1_base_text_size"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/takeout_order_sv_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/takeout_1_margin_left"
+        android:layout_marginRight="@dimen/takeout_1_margin_left"
+        android:layout_marginTop="@dimen/takeout_4_order_margin_top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/takeout_order_ll_2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/takeout_4_order_address_height"
+                android:background="@drawable/takeout_order_part_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/takeout_2_back_margin_left"
+                    android:layout_marginTop="@dimen/takeout_2_back_margin_left"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/takeout_order_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="@string/takeout_order_no_address"
+                            android:textColor="#fff"
+                            android:textSize="@dimen/takeout_1_base_text_size" />
+
+                        <TextView
+                            android:id="@+id/takeout_order_address_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/takeout_4_order_address_phone_margin_top"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="#fff"
+                            android:textSize="@dimen/takeout_1_base_text_size" />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/takeout_order_add_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/takeout_4_order_address_add_margin_right"
+                        android:background="@null"
+                        android:padding="10dp"
+                        android:src="@mipmap/takeout_right_arrow" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="@dimen/takeout_2_back_margin_left"
+                    android:layout_marginRight="@dimen/takeout_2_back_margin_left"
+                    android:layout_marginTop="5dp"
+                    android:background="#1affffff" />
+
+                <TextView
+                    android:id="@+id/takeout_order_dispatcher_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="@dimen/takeout_2_back_margin_left"
+                    android:text="立即送出(12:00送达)"
+                    android:textSize="@dimen/takeout_1_base_text_size"
+                    android:textColor="#007eff"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/takeout_4_order_seller_margin_top"
+                android:background="@drawable/takeout_order_part_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/takeout_order_seller_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/takeout_4_order_seller_name2_margin_top"
+                    android:gravity="center"
+                    android:text="@string/takeout_order_seller_name"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/takeout_2_food_detail_name_size" />
+
+                <View
+                    android:id="@+id/view_l2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/takeout_4_order_line_margin_left_right"
+                    android:layout_marginRight="@dimen/takeout_4_order_line_margin_left_right"
+                    android:layout_marginTop="@dimen/takeout_4_order_seller_name2_margin_bottom"
+                    android:background="#1affffff" />
+
+                <LinearLayout
+                    android:id="@+id/takeout_order_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+                <!--android:layout_marginLeft="@dimen/takeout_4_order_line_margin_left_right"-->
+                <!--android:layout_marginRight="@dimen/takeout_4_order_line_margin_left_right"-->
+                <!--<View
+                    android:id="@+id/view_l3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@color/takeout_car_horizontal_line" />
+-->
+                <RelativeLayout
+                    android:id="@+id/rl_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/takeout_4_order_extra_margin_top"
+                    android:layout_marginLeft="@dimen/takeout_4_order_extra_margin_left"
+                    android:layout_marginRight="@dimen/takeout_4_order_extra_margin_right"
+                    android:layout_marginBottom="@dimen/takeout_4_order_extra_margin_bottom_top">
+
+                    <TextView
+                        android:id="@+id/takeout_order_tv_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="包装费"
+                        android:textColor="#4dffffff"
+                        android:textSize="@dimen/takeout_1_base_text_size" />
+
+                    <TextView
+                        android:id="@+id/takeout_order_bagging"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="￥0.0"
+                        android:textColor="#4dffffff"
+                        android:textSize="@dimen/takeout_1_base_text_size"/>
+
+                    <TextView
+                        android:id="@+id/takeout_order_tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/takeout_order_tv_1"
+                        android:layout_marginTop="@dimen/takeout_4_order_extra_text_margin_top"
+                        android:text="配送费"
+                        android:textColor="#4dffffff"
+                        android:textSize="@dimen/takeout_1_base_text_size"/>
+
+                    <TextView
+                        android:id="@+id/takeout_order_distribute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/takeout_order_bagging"
+                        android:layout_marginTop="@dimen/takeout_4_order_extra_text_margin_top"
+                        android:text="￥5.0"
+                        android:textColor="#4dffffff"
+                        android:textSize="@dimen/takeout_1_base_text_size"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/takeout_order_note"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/takeout_4_order_note_height"
+                android:layout_marginTop="@dimen/takeout_4_order_seller_margin_top"
+                android:layout_marginBottom="90dp"
+                android:background="@drawable/takeout_order_part_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/takeout_4_order_extra_margin_bottom_top"
+                    android:text="备注:"
+                    android:textColor="#b3ffffff"
+                    android:textSize="@dimen/takeout_2_number_text_size" />
+
+                <TextView
+                    android:id="@+id/takeout_order_note_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/takeout_4_order_extra_margin_bottom_top"
+                    android:layout_marginRight="@dimen/takeout_4_order_extra_margin_bottom_top"
+                    android:ellipsize="end"
+                    android:hint="(口味、偏好)"
+                    android:textColorHint="#b3ffffff"
+                    android:singleLine="true"
+                    android:textColor="#b3ffffff"
+                    android:textSize="@dimen/takeout_2_number_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/takeout_order_rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/takeout_4_order_note_height"
+        android:layout_alignParentBottom="true"
+        android:background="#212121"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/takeout_order_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/takeout_1_margin_left"
+            android:text="合计:"
+            android:textColor="@color/takeout_car_bottom_text_color"
+            android:textSize="@dimen/takeout_3_car_total_text_size" />
+
+        <TextView
+            android:id="@+id/takeout_order_total"
+            android:layout_toRightOf="@id/takeout_order_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/takeout_1_margin_left"
+            android:text="￥110"
+            android:textColor="#007eff"
+            android:textSize="@dimen/takeout_3_car_total_text_size" />
+
+        <Button
+            android:id="@+id/takeout_order_certain_pay"
+            android:layout_width="@dimen/takeout_4_order_balance_width"
+            android:layout_height="@dimen/takeout_4_order_balance_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/takeout_1_margin_left"
+            android:background="@drawable/takeout_car_balance"
+            android:text="确认支付"
+            android:textSize="@dimen/takeout_3_car_total_text_size"
+            android:textColor="#fff"/>
+    </RelativeLayout>
+</RelativeLayout>
+
+    <!--<TextView
+                        android:id="@+id/takeout_order_small_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="7dp"
+                        android:text="小计￥110.0"
+                        android:textColor="@color/takeout_car_bottom_color"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:id="@+id/view_l1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@color/takeout_car_horizontal_line"
+                        android:layout_above="@id/takeout_order_small_total"/>
+            -->

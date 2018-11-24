@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/friend_10_add_menu_width"
+    android:layout_height="@dimen/friend_10_add_menu_height"
+    android:background="@drawable/option"
+    android:gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/friend_menu_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginTop="@dimen/friend_10_add_menu_btn_top"
+        android:text="新增联系人"
+        android:drawableLeft="@mipmap/add_icon"
+        android:layout_marginLeft="@dimen/friend_10_add_menu_btn_left_right"
+        android:layout_marginRight="@dimen/friend_10_add_menu_btn_left_right"
+        android:textSize="@dimen/friend_10_add_menu_btn_txt_size"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1a212121"
+        android:layout_marginLeft="@dimen/friend_10_add_menu_btn_left_right"
+        android:layout_marginRight="@dimen/friend_10_add_menu_btn_left_right"/>
+
+    <Button
+        android:id="@+id/friend_menu_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="删除联系人"
+        android:drawableLeft="@mipmap/del_icon"
+        android:layout_marginLeft="@dimen/friend_10_add_menu_btn_left_right"
+        android:layout_marginRight="@dimen/friend_10_add_menu_btn_left_right"
+        android:textSize="@dimen/friend_10_add_menu_btn_txt_size"/>
+</LinearLayout>

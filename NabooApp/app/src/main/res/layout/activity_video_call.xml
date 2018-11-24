@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/video_call_bg"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="false">
+
+    <!--通话界面容器-->
+    <RelativeLayout
+        android:id="@+id/video_call_layout_surface_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <com.hyphenate.media.EMCallSurfaceView
+            android:id="@+id/video_call_opposite_surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.hyphenate.media.EMCallSurfaceView
+            android:id="@+id/video_call_local_surface"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="96dp" />
+    </RelativeLayout>
+
+    <!--控制按钮层布局-->
+    <RelativeLayout
+        android:id="@+id/video_call_layout_call_control"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <!--头部状态以及最小化操作-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!--通话状态-->
+                <TextView
+                    android:id="@+id/video_call_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/video_call_black"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text=""
+                    android:textColor="@color/video_call_white" />
+                <!--通话时间-->
+                <TextView
+                    android:id="@+id/video_call_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/video_call_black"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text=""
+                    android:textColor="@color/video_call_white"
+                    android:visibility="gone" />
+                <!-- 联系人 -->
+                <TextView
+                    android:id="@+id/video_call_friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:shadowColor="@color/video_call_black"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:text=""
+                    android:textColor="@color/video_call_white"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_calling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <!--麦克风开关-->
+                <ImageButton
+                    android:id="@+id/video_call_mic_switch"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/video_call_click_circle_transparent"
+                    android:src="@drawable/video_call_mic_off_white" />
+
+                <!--扬声器开关-->
+                <ImageButton
+                    android:id="@+id/video_call_speaker_switch"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/video_call_click_circle_transparent"
+                    android:src="@drawable/video_call_volume_up_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!--拒绝接听-->
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/video_call_reject_call"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="24dp"
+                    android:src="@drawable/video_call_end_white"
+                    app:backgroundTint="@color/video_call_red"
+                    app:fabSize="normal" />
+
+                <!--结束通话-->
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/video_call_end_call"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="24dp"
+                    android:src="@drawable/video_call_end_white"
+                    android:visibility="gone"
+                    app:backgroundTint="@color/video_call_red"
+                    app:fabSize="normal" />
+
+                <!--接听通话-->
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/video_call_answer_call"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="24dp"
+                    android:src="@drawable/video_call_white"
+                    app:backgroundTint="@color/video_call_green"
+                    app:fabSize="normal" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

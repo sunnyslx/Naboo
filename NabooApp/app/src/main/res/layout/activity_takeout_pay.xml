@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151414">
+
+    <Button
+        android:id="@+id/takeout_pay_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/takeout_2_back_margin_left"
+        android:layout_marginTop="@dimen/takeout_2_back_margin_top"
+        android:background="@null"
+        android:drawableLeft="@mipmap/path"
+        android:drawablePadding="@dimen/takeout_3_car_back_text_image_margin"
+        android:text="@string/takeout_pay_title"
+        android:textColor="#fff"
+        android:textSize="@dimen/takeout_1_base_text_size" />
+
+    <TextView
+        android:id="@+id/takeout_pay_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/takeout_5_pay_text_margin_top"
+        android:text="需要支付100元,支付剩余时间19:59"
+        android:textColor="#fff"
+        android:textSize="@dimen/takeout_3_car_total_text_size" />
+
+    <ImageButton
+        android:id="@+id/takeout_pay_we_chat"
+        android:layout_below="@id/takeout_pay_info"
+        android:layout_marginTop="@dimen/takeout_5_pay_we_chat_margin_top"
+        android:layout_marginLeft="@dimen/takeout_5_pay_ali_pay_margin_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@mipmap/pay_button_wechat" />
+
+    <ImageButton
+        android:id="@+id/takeout_pay_ali_pay"
+        android:layout_below="@id/takeout_pay_we_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/takeout_5_pay_ali_pay_margin_top"
+        android:layout_marginLeft="@dimen/takeout_5_pay_ali_pay_margin_left"
+        android:background="@null"
+        android:src="@mipmap/pay_button_alipay" />
+
+    <LinearLayout
+        android:layout_width="@dimen/takeout_5_pay_qr_code_width_height"
+        android:layout_height="@dimen/takeout_5_pay_qr_code_width_height"
+        android:layout_alignTop="@id/takeout_pay_we_chat"
+        android:layout_marginLeft="@dimen/takeout_4_order_seller_name_margin_bottom"
+        android:layout_toRightOf="@id/takeout_pay_we_chat"
+        android:gravity="center"
+        android:background="@drawable/takeout_pay_qr">
+
+        <ImageView
+            android:id="@+id/takeout_pay_qr_code"
+            android:layout_width="@dimen/takeout_5_pay_qr_code_image_width_height"
+            android:layout_height="@dimen/takeout_5_pay_qr_code_image_width_height"
+            android:src="@mipmap/takeout_pay_qr_cord"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+</RelativeLayout>

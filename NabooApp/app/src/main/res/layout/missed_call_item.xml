@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/missed_call_index"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@drawable/friend_item_sort"
+        android:layout_margin="5dp"
+        android:text="1"
+        android:textColor="@color/takeout_item_sort_text"
+        android:textSize="30px"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/missed_call_name"
+        android:layout_toRightOf="@id/missed_call_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="王小明"
+        android:textSize="40px"
+        android:textColor="@color/takeout_item_sort_text"/>
+
+    <TextView
+        android:id="@+id/missed_call_phone"
+        android:layout_toRightOf="@id/missed_call_index"
+        android:layout_below="@id/missed_call_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13800000000"
+        android:textSize="30px"
+        android:textColor="@color/takeout_item_sort_text"/>
+
+    <ImageView
+        android:id="@+id/missed_call_phoning"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:src="@mipmap/video_call_microphone"/>
+</RelativeLayout>

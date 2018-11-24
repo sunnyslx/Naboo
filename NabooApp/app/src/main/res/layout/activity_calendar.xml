@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/date_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="horizontal"
+    tools:ignore="RtlHardcoded,HardcodedText,RtlSymmetry,SmallSp">
+
+
+    <LinearLayout
+        android:layout_gravity="center_vertical"
+        android:id="@+id/calendar_left"
+        android:splitMotionEvents="false"
+        android:layout_width="@dimen/calendar_left_layout_width"
+        android:layout_height="@dimen/calendar_left_layout_height"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/calendar_left_layout_marginLeft"
+        android:background="@mipmap/date_bg_1">
+
+        <RelativeLayout
+            android:layout_marginTop="108px"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/calendar_left_year_month_day_textSize"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/calendar_left_year_layout_marginLeft"
+                android:layout_marginRight="@dimen/calendar_left_year_layout_marginRight"
+                android:layout_toRightOf="@+id/tv_year"
+                android:gravity="center_vertical"
+                android:text="@string/year"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/calendar_left_year_month_day_textSize"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+            <TextView
+                android:id="@+id/tv_month_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/year"
+                android:gravity="center_vertical"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/calendar_left_year_month_day_textSize"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+            <TextView
+                android:id="@+id/month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/calendar_left_year_layout_marginLeft"
+                android:layout_marginRight="@dimen/calendar_left_year_layout_marginRight"
+                android:layout_toRightOf="@+id/tv_month_day"
+                android:gravity="center_vertical"
+                android:text="@string/month"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/calendar_left_year_month_day_textSize"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/month"
+                android:gravity="center_vertical"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/calendar_left_year_month_day_textSize"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/calendar_left_year_layout_marginLeft"
+                android:layout_marginRight="@dimen/calendar_left_year_layout_marginRight"
+                android:layout_toRightOf="@+id/tv_day"
+                android:gravity="center_vertical"
+                android:text="@string/day"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/calendar_left_year_month_day_textSize"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/week"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/calendar_left_week_layout_marginTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="周五"
+            android:textSize="@dimen/calendar_left_lunar_text_size" />
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/calendar_left_lunar_layout_marginTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lunar_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/calendar_left_lunar_text_size"
+                />
+            <TextView
+                android:id="@+id/holiday_calendar"
+                android:layout_marginLeft="@dimen/calendar_left_holiday_calendar_layout_marginLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/calendar_left_holiday_text_size"
+               />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/rl_tool"
+        android:splitMotionEvents="false"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calendar_rl_tool_height"
+        android:layout_marginTop="@dimen/calendar_rl_tool_margintop"
+        android:layout_marginLeft="@dimen/calendar_rl_tool_marginleft"
+        android:layout_marginBottom="@dimen/calendar_rl_tool_marginbottom">
+
+        <com.idx.naboo.utils.TimeView
+            android:id="@+id/currenttime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/selectyear"
+            android:gravity="center_vertical"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/calendar_textsize_two_six"/>
+        <FrameLayout
+            android:id="@+id/selectyear"
+            android:layout_width="@dimen/calendar_selectyear_width"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/selectmonth"
+            android:layout_marginLeft="@dimen/calendar_selectyear_marginleft"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_ripple">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@drawable/select" />
+            <TextView
+                android:id="@+id/selectyeartext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/year"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/calendar_textsize_select" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/selectmonth"
+            android:layout_width="@dimen/calendar_selectmonth_width"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/event"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_ripple">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                android:src="@drawable/select"
+                android:tint="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/selectmonthtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/month"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/calendar_textsize_select" />
+        </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/event"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/calendar_event_marginleft"
+            android:layout_marginRight="@dimen/calendar_event_marginright"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerInside"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/calendar_view_marginleft"
+        android:layout_marginRight="@dimen/calendar_view_marginright"
+        android:background="#CFCFCF"
+        />
+    <com.idx.calendarview.CalendarLayout
+        android:id="@+id/calendarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:calendar_content_view_id="@+id/linearView"
+        app:default_status="expand">
+
+        <com.idx.calendarview.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:current_month_lunar_text_color="#FFFFFF"
+            app:current_month_text_color="#FFFFFF"
+            app:other_month_text_color="#B3B3B3"
+            app:scheme_lunar_text_color="#B3B3B3"
+            app:scheme_text="假"
+            app:selected_lunar_text_color="#CFCFCF"
+            app:selected_text_color="#FFFFFF"
+            app:week_bar_view="com.idx.naboo.calendar.EnglishWeekBar"/>
+    </com.idx.calendarview.CalendarLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.idx.naboo.dish.DishActivity"
+    android:background="@mipmap/bg_70">
+    <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/dish_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dish_name_marginTop"
+            android:layout_marginStart="@dimen/dish_name_marginStart"
+            android:textSize="@dimen/dish_name_textSize"
+            android:textColor="@color/white" />
+        <ScrollView
+            android:layout_below="@id/dish_name"
+            android:id="@+id/dish_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/dish_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/dish_material1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dish_name_marginStart"
+                        android:gravity="center"
+                        android:text="食材："
+                        android:textSize="@dimen/dish_material_textSize"
+                        android:layout_marginTop="@dimen/dish_name_marginTop"
+                        android:textColor="@color/white"/>
+                    <com.idx.naboo.dish.DishGridView
+                        android:id="@+id/grid_material"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dish_material1"
+                        android:layout_toEndOf="@id/dish_material1"
+                        android:numColumns="2"
+                        android:horizontalSpacing="2dp" >
+                    </com.idx.naboo.dish.DishGridView>
+                    <TextView
+                        android:id="@+id/dish_ste"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/grid_material"
+                        android:textSize="@dimen/dish_material_textSize"
+                        android:layout_alignStart="@id/dish_material1"
+                        android:layout_marginTop="@dimen/dish_step_marginImage"
+                        android:textColor="@color/white"/>
+                    <LinearLayout
+                        android:id="@+id/dish_list"
+                        android:layout_below="@id/grid_material"
+                        android:layout_alignStart="@id/dish_ste"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dish_step_image_marginStep"
+                        android:layout_marginEnd="30dp"
+                        android:orientation="vertical">
+                    </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+

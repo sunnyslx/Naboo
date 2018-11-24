@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="30px"
+    android:layout_marginStart="60px"
+    android:layout_marginEnd="70px"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:textColor="@color/color_ffffff"
+        android:textSize="40px"
+        android:id="@+id/detail_name"
+        android:layout_width="700px"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/color_ffffff"
+        android:textSize="40px"
+        android:id="@+id/count"
+        android:layout_toRightOf="@+id/detail_name"
+        android:layout_marginLeft="80px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textColor="@color/color_ffffff"
+        android:textSize="40px"
+        android:id="@+id/money"
+        android:layout_marginLeft="70px"
+        android:layout_toRightOf="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="30px"
+        android:layout_below="@id/money"
+        android:background="#757575"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+</RelativeLayout>

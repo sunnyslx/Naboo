@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="__local_aars__:/home/ryan/.gradle/caches/transforms-1/files-1.1/mor-sdk-tts-release.aar/af351fc6f2a190756f95ecf0dac01432:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/mor-sdk-tts-release.aar/af351fc6f2a190756f95ecf0dac01432/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/mor-sdk-tts-release.aar/af351fc6f2a190756f95ecf0dac01432/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/mor-sdk-tts-release.aar/af351fc6f2a190756f95ecf0dac01432/jars/libs/com.baidu.tts_2.2.8.20160824_83a9ca4_release.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/mor-sdk-tts-release.aar/af351fc6f2a190756f95ecf0dac01432/jars/libs/galaxy-v2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/linear"
+    android:background="@drawable/naboo_bg">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/register_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/naboo_bg"
+            android:theme="@style/ToolbarTheme"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/Register_line_name_start"
+                android:id="@+id/Register_line_name"
+                android:layout_marginTop="@dimen/Register_line_name_top"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Register_line_name_height">
+                <TextView
+                    android:layout_width="@dimen/Register_line_name_text_width"
+                    android:layout_height="match_parent"
+                    android:text="帐号"
+                    android:gravity="center|right"
+                    android:textSize="@dimen/Register_line_name_text_size"
+                    android:textColor="#ffffff"/>
+
+                <EditText
+                    android:id="@+id/register_userName_text"
+                    android:layout_width="@dimen/register_userName_text_width"
+                    android:textAllCaps="false"
+                    android:inputType="number"
+                    android:digits="1234567890"
+                    android:maxLength="11"
+                    android:hint="请输入11位手机号"
+                    android:theme="@style/MyEditText"
+                    android:layout_marginLeft="@dimen/register_userName_text_left"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#1affffff"
+                    android:layout_height="match_parent"
+                    />
+                </LinearLayout>>
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/Register_line_name_start"
+
+                android:id="@+id/Register_line_Pwd"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Register_line_name_height"
+                android:layout_below="@+id/Register_line_name">
+                <TextView
+                    android:layout_width="@dimen/Register_line_name_text_width"
+                    android:layout_gravity="center"
+                    android:gravity="center|right"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/Register_line_name_text_size"
+                    android:text="密码"
+                    android:textColor="#ffffff"/>
+
+                <EditText
+                    android:id="@+id/register_userPaw_text"
+                    android:layout_width="@dimen/register_userName_text_width"
+                    android:theme="@style/MyEditText"
+                    android:maxLength="32"
+                    android:hint="请设置密码（至少6个字符）"
+                    android:layout_marginLeft="@dimen/register_userName_text_left"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#1affffff"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    />
+
+                    <CheckBox
+                        android:id="@+id/cbLaws"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/hidden_icon"
+                        android:button="@null" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/Register_line_Pwd_2"
+                android:layout_marginStart="@dimen/Register_line_name_start"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Register_line_name_height"
+                android:layout_below="@+id/Register_line_Pwd">
+                <TextView
+                    android:layout_width="@dimen/Register_line_name_text_width"
+                    android:layout_gravity="center"
+                    android:gravity="center|right"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/Register_line_name_text_size"
+                    android:text="确认密码"
+                    android:textColor="#ffffff"/>
+
+                <EditText
+                    android:id="@+id/register_userPaw_text_2"
+                    android:layout_width="@dimen/register_userName_text_width"
+                    android:maxLength="32"
+                    android:layout_marginLeft="@dimen/register_userName_text_left"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:hint="请再次输入密码"
+                    android:theme="@style/MyEditText"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#1affffff"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    />
+                    <CheckBox
+                        android:id="@+id/cbLaws_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/hidden_icon"
+                        android:button="@null" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/line_name_text"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/Register_line_name_start"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/Register_line_name_height"
+                android:layout_below="@id/Register_line_Pwd_2">
+                <TextView
+                    android:layout_width="@dimen/Register_line_name_text_width"
+                    android:layout_height="match_parent"
+                    android:text="姓名"
+                    android:gravity="center|right"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/Register_line_name_text_size"
+                    android:textColor="#ffffff"/>
+
+                <EditText
+                    android:id="@+id/name_text"
+                    android:layout_width="@dimen/register_userName_text_width"
+                    android:textAllCaps="false"
+                    android:theme="@style/MyEditText"
+                    android:layout_marginLeft="@dimen/register_userName_text_left"
+                    android:textCursorDrawable="@drawable/edit_cursor_color"
+                    android:layout_gravity="center"
+                    android:textColor="#ffffff"
+                    android:hint="请输入姓名"
+                    android:textColorHint="#1affffff"
+                    android:layout_height="match_parent"
+                    android:imeOptions="actionDone"/>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/register_linear_button_top"
+                android:layout_marginStart="@dimen/register_linear_button_start"
+                android:layout_marginEnd="@dimen/register_linear_button_end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/line_name_text">
+
+                <Button
+                    android:id="@+id/Register_clear_bnt"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/register_button_start"
+                    android:textSize="@dimen/register_button_textsize"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginEnd="@dimen/register_button_end"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_shape_checked"
+                    android:text="取消"/>
+
+                <Button
+                    android:id="@+id/Register_login_bnt"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/register_button_end"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/register_button_textsize"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:background="@drawable/button_shape_checked"
+                    android:text="注册"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

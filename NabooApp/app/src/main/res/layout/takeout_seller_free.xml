@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/takeout_seller_free_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/buttn_error"
+        android:layout_marginTop="5px"
+        android:layout_marginRight="5px"
+        android:layout_gravity="right"
+        android:background="@null"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="优惠活动"
+        android:textSize="40px"
+        android:layout_marginBottom="12px"
+        android:textColor="#212121"
+        android:layout_gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="#1a212121"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:id="@+id/takeout_seller_free_list"/>
+</LinearLayout>

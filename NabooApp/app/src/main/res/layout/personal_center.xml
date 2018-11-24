@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbarlayout"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/naboo_bg"
+            android:theme="@style/ToolbarTheme"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <RelativeLayout
+
+        android:id="@+id/line_account_management"
+        android:layout_marginTop="@dimen/personal_center_line_account_management_margin_top"
+        android:layout_below="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/personal_center_line_account_management_margin_start"
+        android:layout_marginEnd="@dimen/personal_center_line_account_management_margin_end">
+
+        <ImageView
+            android:id="@+id/account_image"
+            android:layout_width="@dimen/personal_center_image_layout_width"
+            android:layout_height="@dimen/personal_center_image_layout_height"
+            android:layout_marginStart="@dimen/personal_center_image_margin_start"
+            android:background="@mipmap/user_icon"/>
+
+        <TextView
+            android:id="@+id/account_management"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/account_image"
+            android:layout_marginLeft="44px"
+            android:text="账号管理"
+            android:textSize="@dimen/personal_center_line_account_management_textSize"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+             />
+        <ImageView
+            android:id="@+id/accountBtn"
+            android:layout_width="@dimen/personal_center_image_layout_width"
+            android:layout_height="@dimen/personal_center_image_layout_height"
+            android:layout_marginEnd="@dimen/personal_center_image_margin_end"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_center_view_layout_height"
+        android:layout_marginTop="@dimen/personal_center_view_margin_top"
+        android:layout_below="@id/line_account_management"
+        android:background="#4d000000"
+        android:layout_marginStart="@dimen/personal_center_line_account_management_margin_start"
+        android:layout_marginEnd="@dimen/personal_center_line_account_management_margin_end"/>
+
+    <RelativeLayout
+        android:id="@+id/line_order_information"
+        android:layout_marginTop="@dimen/personal_center_view_margin_top"
+        android:layout_below="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/personal_center_line_account_management_margin_start"
+        android:layout_marginEnd="@dimen/personal_center_line_account_management_margin_end">
+
+        <ImageView
+            android:id="@+id/order_image"
+            android:layout_width="@dimen/personal_center_image_layout_width"
+            android:layout_height="@dimen/personal_center_image_layout_height"
+            android:layout_marginStart="@dimen/personal_center_image_margin_start"
+            android:background="@mipmap/order_icon"/>
+        <TextView
+            android:id="@+id/order_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单信息"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/order_image"
+            android:layout_marginLeft="44px"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/personal_center_line_account_management_textSize" />
+        <ImageView
+            android:id="@+id/orderBtn"
+            android:layout_width="@dimen/personal_center_image_layout_width"
+            android:layout_height="@dimen/personal_center_image_layout_height"
+            android:layout_marginEnd="@dimen/personal_center_image_margin_end"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_center_view_layout_height"
+        android:layout_marginTop="@dimen/personal_center_view_margin_top"
+        android:layout_below="@id/line_order_information"
+        android:background="#4d000000"
+        android:layout_marginStart="@dimen/personal_center_line_account_management_margin_start"
+        android:layout_marginEnd="@dimen/personal_center_line_account_management_margin_end"/>
+
+    <RelativeLayout
+        android:id="@+id/line_address_management"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/view_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/personal_center_line_account_management_margin_start"
+        android:layout_marginEnd="@dimen/personal_center_line_account_management_margin_end">
+
+        <ImageView
+            android:id="@+id/address_image"
+            android:layout_width="@dimen/personal_center_image_layout_width"
+            android:layout_height="@dimen/personal_center_image_layout_height"
+            android:layout_marginStart="@dimen/personal_center_image_margin_start"
+            android:background="@mipmap/address_icon"/>
+        <TextView
+            android:id="@+id/address_management"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="地址管理"
+            android:layout_toRightOf="@id/address_image"
+            android:layout_marginLeft="44px"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/personal_center_line_account_management_textSize" />
+
+
+        <ImageView
+            android:id="@+id/addressBtn"
+            android:layout_width="@dimen/personal_center_image_layout_width"
+            android:layout_height="@dimen/personal_center_image_layout_height"
+            android:layout_marginEnd="@dimen/personal_center_image_margin_end"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/line_address_management"
+        android:background="#4d000000"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"/>
+
+    <RelativeLayout
+        android:id="@+id/line_friend_management"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/view_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/personal_center_line_account_management_margin_start"
+        android:layout_marginEnd="@dimen/personal_center_line_account_management_margin_end">
+
+        <ImageView
+            android:id="@+id/friend_management_image"
+            android:layout_width="@dimen/personal_center_image_layout_width"
+            android:layout_height="@dimen/personal_center_image_layout_height"
+            android:layout_marginStart="@dimen/personal_center_image_margin_start"
+            android:background="@mipmap/contacts_icon"/>
+        <TextView
+            android:id="@+id/friend_management"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/friend_management_image"
+            android:layout_marginLeft="44px"
+            android:layout_centerVertical="true"
+            android:text="通讯录"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/personal_center_line_account_management_textSize" />
+
+        <ImageView
+            android:id="@+id/friendBtn"
+            android:layout_width="@dimen/personal_center_image_layout_width"
+            android:layout_height="@dimen/personal_center_image_layout_height"
+            android:layout_marginEnd="@dimen/personal_center_image_margin_end"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_center_view_layout_height"
+        android:layout_marginTop="@dimen/personal_center_view_margin_top"
+        android:layout_below="@id/line_friend_management"
+        android:background="#4d000000"
+        android:layout_marginStart="@dimen/personal_center_line_account_management_margin_start"
+        android:layout_marginEnd="@dimen/personal_center_line_account_management_margin_end"/>
+
+    <TextView
+        android:id="@+id/versionId"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/personal_center_versionId_margin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/personal_center_line_account_management_textSize"
+        android:layout_gravity="bottom"
+        android:textColor="#ffffff"
+        android:text="版本信息"/>
+
+</RelativeLayout>

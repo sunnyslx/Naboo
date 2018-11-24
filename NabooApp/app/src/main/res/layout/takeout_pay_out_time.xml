@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/takeout_5_pay_time_out_width"
+    android:layout_height="@dimen/takeout_5_pay_time_out_height"
+    android:background="@drawable/takeout_item_image">
+
+    <TextView
+        android:id="@+id/takeout_pay_out_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="支付超时,订单已取消"
+        android:layout_marginTop="@dimen/takeout_5_pay_time_out_text_margin_top"
+        android:textSize="@dimen/takeout_2_food_detail_name_size"
+        android:textColor="#212121"/>
+
+    <!--<Button-->
+        <!--android:id="@+id/takeout_pay_out_time_known"-->
+        <!--android:layout_below="@id/takeout_pay_out_tv"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_width="@dimen/takeout_5_pay_time_out_btn_width"-->
+        <!--android:layout_height="@dimen/takeout_5_pay_time_out_btn_height"-->
+        <!--android:layout_marginTop="@dimen/takeout_5_pay_time_out_margin_top"-->
+        <!--android:background="@drawable/takeout_note_save"-->
+        <!--android:text="重新下单"-->
+        <!--android:textSize="@dimen/takeout_1_base_text_size"-->
+        <!--android:textColor="#fff"/>-->
+</RelativeLayout>

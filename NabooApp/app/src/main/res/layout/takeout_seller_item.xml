@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/takeout_1_item_food_width"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/takeout_1_item_margin_right">
+
+    <RelativeLayout
+        android:id="@+id/takeout_seller_item_rl_1"
+        android:layout_width="@dimen/takeout_1_item_food_width"
+        android:layout_height="@dimen/takeout_1_item_food_width"
+        android:background="@drawable/takeout_item_image">
+
+        <ImageView
+            android:id="@+id/takeout_seller_item_food"
+            android:layout_width="@dimen/takeout_1_item_food_width"
+            android:layout_height="@dimen/takeout_1_item_food_width"
+            android:src="@mipmap/takeout_order_item_food"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/takeout_seller_item_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/g1_number_card"
+            android:layout_alignParentLeft="true"
+            android:text="1"
+            android:textColor="@color/takeout_item_sort_text"
+            android:textSize="@dimen/takeout_2_recycler_item_index_size"
+            android:gravity="center"/>
+
+        <!--<TextView
+            android:id="@+id/takeout_seller_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:text="￥20"
+            android:textSize="20sp"/>-->
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/takeout_seller_item_food_name"
+        android:layout_below="@id/takeout_seller_item_rl_1"
+        android:layout_width="@dimen/takeout_1_item_food_width"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/takeout_2_food_name_margin_top"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="菜名"
+        android:textColor="@color/takeout_item_sort_text"
+        android:textSize="@dimen/takeout_1_base_text_size"/>
+
+    <TextView
+        android:id="@+id/takeout_seller_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/takeout_seller_item_food_name"
+        android:layout_marginTop="@dimen/takeout_2_recycler_item_price_margin_top"
+        android:text="￥200.00"
+        android:textSize="@dimen/takeout_2_recycler_item_food_price_size"
+        android:textColor="#fff"/>
+
+    <ImageButton
+        android:id="@+id/takeout_seller_item_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_add"
+        android:background="@null"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/takeout_seller_item_food_name"
+        android:layout_marginTop="@dimen/takeout_2_recycler_item_add_margin_top"/>
+
+    <TextView
+        android:id="@+id/takeout_seller_item_count"
+        android:layout_toLeftOf="@id/takeout_seller_item_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:maxLength="3"
+        android:visibility="invisible"
+        android:layout_below="@id/takeout_seller_item_food_name"
+        android:textSize="@dimen/takeout_2_number_text_size"
+        android:textColor="@color/takeout_item_sort_text"
+        android:layout_marginTop="@dimen/takeout_2_recycler_item_count_margin_top" />
+
+    <ImageButton
+        android:id="@+id/takeout_seller_item_reduce"
+        android:layout_toLeftOf="@id/takeout_seller_item_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_reduce"
+        android:layout_below="@id/takeout_seller_item_food_name"
+        android:background="@null"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/takeout_2_recycler_item_add_margin_top" />
+</RelativeLayout>

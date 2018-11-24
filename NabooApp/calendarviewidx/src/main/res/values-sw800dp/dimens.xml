@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="calendar_week_height">53dp</dimen>
+    <dimen name="calendar_week_padding">11dp</dimen>
+    <dimen name="calendar_tv_month_margin">16dp</dimen>
+    <dimen name="calendar_tv_month_padding">11dp</dimen>
+    <dimen name="calendar_selectView_padding">8dp</dimen>
+    <dimen name="calendar_vp_calendar_margintop">53dp</dimen>
+    <dimen name="calendar_vp_week_height">67dp</dimen>
+    <dimen name="calendar_vp_week_margintop">53dp</dimen>
+    <dimen name="calendar_line_margin">21dp</dimen>
+    <dimen name="calendar_line_margintop">53dp</dimen>
+    <dimen name="calendar_selectLayout_padding">16dp</dimen>
+    <dimen name="month_textsize">200dp</dimen>
+    <dimen name="month2_textsize">480dp</dimen>
+
+    <dimen name="calendar_MonthViewPager_layout_marginTop">80dp</dimen> // MonthViewPager top
+    <dimen name="calendar_MonthView_textSize">13sp</dimen> // MonthView size
+    <dimen name="calendar_MonthView_mLunarTextSize_textSize">21sp</dimen>
+    <dimen name="calendar_llweek_minHeight">53dp</dimen>
+
+    <dimen name="calendar_selectView_textsize">18sp</dimen>
+    <dimen name="calendar_tv_month_textsize">24sp</dimen>
+    <dimen name="calendar_week_textsize">16sp</dimen>
+</resources>

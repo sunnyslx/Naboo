@@ -1,0 +1,70 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'maven-publish'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    publishNonDefault true
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        multiDexEnabled = true
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "2g"
+        jumboMode = true
+    }
+}
+
+////发布
+//publishing {
+//    publications {
+//        network_lib(MavenPublication) {
+//            groupId 'net.imoran.tv.sdk.network'
+//            artifactId 'network-lib'
+//            //version 'test-SNAPSHOT'
+//            version '0.4-SNAPSHOT'
+//            artifact("$buildDir/outputs/aar/mor-sdk-network-lib-release.aar")
+//        }
+//    }
+//
+//    repositories {
+//        maven {
+////            url 'http://60.205.58.83:9091/repository/maven-releases/'
+//            url 'http://60.205.58.83:9091/repository/maven-snapshots/'
+//            credentials {
+//                username 'developer'
+//                password 'M0rDev..'
+//            }
+//        }
+//    }
+//}
+dependencies {
+//    implementation fileTree(dir: 'libs', include: ['*.jar'])
+//    androidTestImplementation("com.android.support.test.espresso:espresso-core:$rootProject.espressoVersion", {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
+//
+    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+//    testImplementation "junit:junit:$rootProject.junitVersion"
+
+    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
+    //网络请求
+    // compile 'ai.mor:ex-post-sale-service:0.0.1-SNAPSHOT'
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.okhttpVersion"
+
+}
